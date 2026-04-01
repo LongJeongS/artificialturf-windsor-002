@@ -759,15 +759,16 @@ ul { list-style: none; }
 
     /* Process */
     .svc-process { padding: 72px 0; }
-    .process-steps { display: flex; flex-direction: column; gap: 56px; margin-top: 48px; }
-    .process-row { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
-    .process-row--reverse .process-row-img { order: 2; }
-    .process-row--reverse .process-row-content { order: 1; }
-    .process-row-img img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius); display: block; box-shadow: var(--shadow-md); }
-    .process-row-content { display: flex; flex-direction: column; gap: 16px; }
-    .process-step-num { width: 52px; height: 52px; border-radius: 50%; background: var(--color-accent); color: var(--white); font-family: var(--font-heading); font-size: 20px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .process-row-content h3 { font-size: 22px; font-weight: 700; color: var(--color-text); margin: 0; }
-    .process-row-content p { font-size: 15px; color: var(--text-mid); margin: 0; line-height: 1.65; }
+    /* Step strip */
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 48px; position: relative; }
+    .process-steps::before { content: ''; position: absolute; top: 26px; left: calc(12.5% + 14px); right: calc(12.5% + 14px); height: 2px; background: var(--border); z-index: 0; }
+    .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 20px; position: relative; z-index: 1; }
+    .process-step-num { width: 52px; height: 52px; border-radius: 50%; background: var(--color-primary); color: var(--white); font-family: var(--font-heading); font-size: 20px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-bottom: 20px; box-shadow: 0 0 0 6px var(--color-bg); }
+    .process-step h3 { font-size: 16px; font-weight: 700; color: var(--color-text); margin: 0 0 10px; line-height: 1.3; }
+    .process-step p { font-size: 14px; color: var(--text-mid); margin: 0; line-height: 1.65; }
+    /* Finished-work image below steps */
+    .process-result-img { margin-top: 56px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-md); }
+    .process-result-img img { width: 100%; aspect-ratio: 16/7; object-fit: cover; display: block; }
 
     /* Service FAQs */
     .svc-faqs { padding: 72px 0; background: var(--color-bg); }
@@ -794,12 +795,14 @@ ul { list-style: none; }
     #cta-band h2 { font-family: var(--font-heading); font-size: clamp(24px,4vw,36px); font-weight: 700; color: var(--white); margin-bottom: 12px; }
     #cta-band p { font-size: 17px; color: rgba(255,255,255,0.9); margin-bottom: 28px; }
 
-    @media(max-width:992px){ .benefits-grid{grid-template-columns:1fr 1fr;} .related-grid{grid-template-columns:1fr 1fr;} .process-row{gap:32px;} }
+    @media(max-width:992px){ .benefits-grid{grid-template-columns:1fr 1fr;} .related-grid{grid-template-columns:1fr 1fr;} }
     @media(max-width:768px){
       .benefits-grid{grid-template-columns:1fr;} .related-grid{grid-template-columns:1fr;}
-      .process-row, .process-row--reverse { grid-template-columns: 1fr; gap: 24px; }
-      .process-row--reverse .process-row-img { order: unset; }
-      .process-row--reverse .process-row-content { order: unset; }
+      .process-steps { grid-template-columns: 1fr 1fr; gap: 32px 16px; }
+      .process-steps::before { display: none; }
+    }
+    @media(max-width:480px){
+      .process-steps { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -905,46 +908,29 @@ ul { list-style: none; }
       <h2 id="process-heading" class="section-title">Turf Installed in 4 Simple Steps</h2>
       <p class="section-subtitle">From first call to finished yard — here's what the process looks like with Windsor Turf Pros.</p>
       <div class="process-steps">
-        <div class="process-row">
-          <div class="process-row-img">
-            <img src="/images/service_6_step_1.jpg" alt="Rooftop assessment for turf installation in Windsor Ontario" loading="lazy" width="600" height="450">
-          </div>
-          <div class="process-row-content">
-            <div class="process-step-num" aria-hidden="true">1</div>
-            <h3>Rooftop or Deck Assessment</h3>
-            <p>We assess the surface, drainage direction, load capacity, and any structural elements before providing a quote. Rooftop installs require a different approach than ground-level work — we plan accordingly.</p>
-          </div>
+        <div class="process-step">
+          <div class="process-step-num" aria-hidden="true">1</div>
+          <h3>Rooftop or Deck Assessment</h3>
+          <p>We assess the surface, drainage direction, load capacity, and any structural elements before providing a quote. Rooftop installs require a different approach than ground-level work — we plan accordingly.</p>
         </div>
-        <div class="process-row process-row--reverse">
-          <div class="process-row-img">
-            <img src="/images/service_6_step_2.jpg" alt="Underlayment installation for rooftop turf in Windsor Ontario" loading="lazy" width="600" height="450">
-          </div>
-          <div class="process-row-content">
-            <div class="process-step-num" aria-hidden="true">2</div>
-            <h3>Surface Prep & Underlayment</h3>
-            <p>The existing surface is cleaned and any membrane protection underlayment is installed. This layer separates the turf backing from the structural surface and routes water to drains.</p>
-          </div>
+        <div class="process-step">
+          <div class="process-step-num" aria-hidden="true">2</div>
+          <h3>Surface Prep & Underlayment</h3>
+          <p>The existing surface is cleaned and any membrane protection underlayment is installed. This layer separates the turf backing from the structural surface and routes water to drains.</p>
         </div>
-        <div class="process-row">
-          <div class="process-row-img">
-            <img src="/images/service_6_step_3.jpg" alt="Precision turf fitting on a rooftop in Windsor Ontario" loading="lazy" width="600" height="450">
-          </div>
-          <div class="process-row-content">
-            <div class="process-step-num" aria-hidden="true">3</div>
-            <h3>Precision Turf Fitting</h3>
-            <p>Rooftop and deck spaces typically have parapets, HVAC units, drainage points, and irregular boundaries. We cut and fit around all of these for a finished, professional result.</p>
-          </div>
+        <div class="process-step">
+          <div class="process-step-num" aria-hidden="true">3</div>
+          <h3>Precision Turf Fitting</h3>
+          <p>Rooftop and deck spaces typically have parapets, HVAC units, drainage points, and irregular boundaries. We cut and fit around all of these for a finished, professional result.</p>
         </div>
-        <div class="process-row process-row--reverse">
-          <div class="process-row-img">
-            <img src="/images/service_6_step_4.jpg" alt="Completed rooftop turf installation in Windsor Ontario" loading="lazy" width="600" height="450">
-          </div>
-          <div class="process-row-content">
-            <div class="process-step-num" aria-hidden="true">4</div>
-            <h3>Final Drainage Test & Walkthrough</h3>
-            <p>We test drainage by simulating rainfall conditions, inspect all edges and transitions, and walk you through the finished space before we leave.</p>
-          </div>
+        <div class="process-step">
+          <div class="process-step-num" aria-hidden="true">4</div>
+          <h3>Final Drainage Test & Walkthrough</h3>
+          <p>We test drainage by simulating rainfall conditions, inspect all edges and transitions, and walk you through the finished space before we leave.</p>
         </div>
+      </div>
+      <div class="process-result-img">
+        <img src="/images/service_6_hero.jpg" alt="Rooftop turf installation in Windsor Ontario by Windsor Turf Pros" loading="lazy" width="1200" height="525">
       </div>
     </div>
   </section>
