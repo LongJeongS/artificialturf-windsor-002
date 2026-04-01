@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+[[redirects]]
+  from = "http://www.artificialturfwindsor.ca/*"
+  to = "https://artificialturfwindsor.ca/:splat"
+  status = 301
+  force = true
