@@ -774,9 +774,9 @@ ul { list-style: none; }
         <li><a href="/faq/">FAQ</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="tel:+11111111111" class="nav-phone" aria-label="Call us">
+        <a href="tel:{{CALLRAIL_NUMBER}}" class="nav-phone" aria-label="Call us">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          +11111111111
+          {{CALLRAIL_NUMBER}}
         </a>
         <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
       </div>
@@ -793,9 +793,9 @@ ul { list-style: none; }
     <a href="/about/" onclick="closeMenu()">About</a>
     <a href="/reviews/" onclick="closeMenu()">Reviews</a>
     <a href="/faq/" onclick="closeMenu()">FAQ</a>
-    <a href="tel:+11111111111" onclick="closeMenu()" style="display:flex;align-items:center;gap:8px;">
+    <a href="tel:{{CALLRAIL_NUMBER}}" onclick="closeMenu()" style="display:flex;align-items:center;gap:8px;">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-      +11111111111
+      {{CALLRAIL_NUMBER}}
     </a>
     <a href="/contact/" class="btn btn-primary mobile-cta" onclick="closeMenu()">Get a Free Estimate</a>
   </nav>
@@ -827,8 +827,6 @@ Our approach is straightforward: we assess your property honestly, recommend the
 We're committed to the communities we serve — Windsor, LaSalle, Tecumseh, Amherstburg, Lakeshore, and the surrounding Essex County area. When you work with us, you're dealing with a local crew that takes your yard seriously. We clean up after ourselves, stick to the timeline we commit to, and don't consider the job done until you've walked the finished space and are satisfied with the result.</div>
         </div>
         <div class="story-card">
-          <div class="story-year">2014</div>
-          <div class="story-year-label">Year Founded</div>
           <div class="story-mission">"Install quality artificial turf that Windsor homeowners are proud to own."</div>
         </div>
       </div>
@@ -874,30 +872,7 @@ When you get a free estimate from Windsor Turf Pros, you'll get a written quote 
     </div>
   </section>
 
-  <!-- TEAM -->
-  <section class="section-pad" aria-labelledby="team-heading">
-    <div class="container">
-      <div style="text-align:center; margin-bottom:48px;">
-        <span class="section-eyebrow">The People Behind the Work</span>
-        <h2 class="section-title" id="team-heading">Your Local Turf Specialists</h2>
-        <p class="section-subtitle" style="margin:0 auto;">Experienced installers who take the finished result seriously — every time.</p>
-      </div>
-      <div class="team-grid">
-        <div class="team-card">
-          <img class="team-photo" src="/images/staff_1.jpg" alt="Jake Horvath" loading="lazy" width="110" height="110">
-          <div class="team-name">Jake Horvath</div>
-          <div class="team-role">Owner & Lead Installer</div>
-          <p class="team-bio">Jake grew up in Windsor and spent fifteen years in landscaping before starting Windsor Turf Pros in 2014. He personally oversees every installation and won't hand off a job he wouldn't be proud to park in front of.</p>
-        </div>
-        <div class="team-card">
-          <img class="team-photo" src="/images/staff_2.jpg" alt="Denise Fontaine" loading="lazy" width="110" height="110">
-          <div class="team-name">Denise Fontaine</div>
-          <div class="team-role">Project Coordinator</div>
-          <p class="team-bio">Denise has been the voice behind Windsor Turf Pros since 2017. She handles every estimate, keeps jobs on schedule, and makes sure clients know exactly what to expect from start to finish.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- TEAM: removed — staff names are internal identity fields only, not public-facing -->
 
   <!-- TESTIMONIALS -->
   <section class="section-pad" style="background:var(--color-bg);" aria-labelledby="reviews-about-heading">
@@ -933,9 +908,6 @@ When you get a free estimate from Windsor Turf Pros, you'll get a written quote 
           </div>
         </article>
       </div>
-      <div style="text-align:center; margin-top:32px;">
-        <a href="#" target="_blank" rel="noopener" style="font-size:15px; font-weight:600; color:var(--color-primary); text-decoration:underline;">Read all our Google reviews →</a>
-      </div>
     </div>
   </section>
 
@@ -949,9 +921,9 @@ When you get a free estimate from Windsor Turf Pros, you'll get a written quote 
         </div>
         <div class="cta-band-actions">
           <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
-          <a href="tel:+11111111111" class="cta-band-phone">
+          <a href="tel:{{CALLRAIL_NUMBER}}" class="cta-band-phone">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            +11111111111
+            {{CALLRAIL_NUMBER}}
           </a>
         </div>
       </div>
@@ -970,13 +942,8 @@ When you get a free estimate from Windsor Turf Pros, you'll get a written quote 
           <p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p>
           <address class="footer-nap" style="font-style:normal;">
             <span>Windsor, Ontario</span><br>
-            <a href="tel:+11111111111" style="color:rgba(255,255,255,0.65);">+11111111111</a><br>
-            <a href="mailto:info@artificialturfwindsor.ca" style="color:rgba(255,255,255,0.65);">info@artificialturfwindsor.ca</a>
+            <a href="tel:{{CALLRAIL_NUMBER}}" style="color:rgba(255,255,255,0.65);">{{CALLRAIL_NUMBER}}</a><br>
           </address>
-          <div class="footer-social" aria-label="Social media links">
-            <a href="#" aria-label="Facebook" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-            <a href="#" aria-label="Instagram" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-          </div>
         </div>
         <div class="footer-col">
           <h4>Services</h4>
@@ -1020,9 +987,9 @@ When you get a free estimate from Windsor Turf Pros, you'll get a written quote 
 </footer>
 
 
-<a id="mobile-cta" href="tel:+11111111111" aria-label="Call us now">
+<a id="mobile-cta" href="tel:{{CALLRAIL_NUMBER}}" aria-label="Call us now">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-  Call Now — +11111111111
+  Call Now — {{CALLRAIL_NUMBER}}
 </a>
 
 <script>
