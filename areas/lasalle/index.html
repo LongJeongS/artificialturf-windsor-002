@@ -743,7 +743,8 @@ ul { list-style: none; }
     .area-cta-card p { font-size: 15px; color: rgba(255,255,255,0.8); margin-bottom: 20px; }
     .area-cta-phone { display: flex; align-items: center; gap: 10px; color: var(--color-accent); font-size: 18px; font-weight: 700; margin-bottom: 14px; text-decoration: none; }
     .area-services { padding: 72px 0; }
-    .area-services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 36px; }
+    .area-services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-top: 36px; }
+    .area-services-grid.services-grid--3col { grid-template-columns: repeat(3, 1fr); }
     .area-service-card { background: var(--color-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition); }
     .area-service-card:hover { border-color: var(--color-accent); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
     .area-service-card h3 { font-size: 17px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px; }
@@ -868,27 +869,37 @@ ul { list-style: none; }
     <div class="container">
       <span class="section-eyebrow">Our Services</span>
       <h2 id="area-services-heading" class="section-title">Services Available in LaSalle</h2>
-      <div class="area-services-grid">
-        <div class="area-service-card">
-          <h3>Backyard Turf in LaSalle</h3>
-          <p>{{service_1_description}}</p>
-          <a href="/services/backyard-turf/">Learn more →</a>
-        </div>
-        <div class="area-service-card">
-          <h3>Playground Turf in LaSalle</h3>
-          <p>{{service_2_description}}</p>
-          <a href="/services/playground-turf/">Learn more →</a>
-        </div>
-        <div class="area-service-card">
-          <h3>Putting Greens in LaSalle</h3>
-          <p>{{service_3_description}}</p>
-          <a href="/services/putting-greens/">Learn more →</a>
-        </div>
-        <div class="area-service-card">
-          <h3>Swimming Pool Turf in LaSalle</h3>
-          <p>{{service_4_description}}</p>
-          <a href="/services/swimming-pool-turf/">Learn more →</a>
-        </div>
+      <div class="area-services-grid services-grid--3col">
+<div class="area-service-card">
+  <h3>Backyard Turf in LaSalle</h3>
+  <p>Full-service artificial turf installation for residential backyards across Windsor and Essex County. We handle site prep, drainage, and installation from start to finish.</p>
+  <a href="/services/backyard-turf/">Learn more →</a>
+</div>
+<div class="area-service-card">
+  <h3>Playground Turf in LaSalle</h3>
+  <p>Safe, cushioned artificial turf for residential and community playground areas. Designed for active play with proper impact absorption and easy cleanup.</p>
+  <a href="/services/playground-turf/">Learn more →</a>
+</div>
+<div class="area-service-card">
+  <h3>Putting Greens in LaSalle</h3>
+  <p>Custom backyard putting greens for Windsor homeowners who want a short-game practice space at home. Built to your layout with performance-grade turf.</p>
+  <a href="/services/putting-greens/">Learn more →</a>
+</div>
+<div class="area-service-card">
+  <h3>Swimming Pool Turf in LaSalle</h3>
+  <p>Slip-resistant artificial turf designed for pool surrounds and deck areas. Stays cool underfoot, drains fast, and eliminates the mud and grass tracked into the pool.</p>
+  <a href="/services/swimming-pool-turf/">Learn more →</a>
+</div>
+<div class="area-service-card">
+  <h3>Pet-Friendly Turf in LaSalle</h3>
+  <p>Durable, odour-resistant artificial turf designed specifically for homes with dogs and cats. Drains quickly, cleans easily, and holds up to heavy pet traffic.</p>
+  <a href="/services/pet-friendly-turf/">Learn more →</a>
+</div>
+<div class="area-service-card">
+  <h3>Rooftop & Deck Turf in LaSalle</h3>
+  <p>Weather-rated artificial turf for rooftop patios, balconies, and elevated deck surfaces. Transforms unused outdoor spaces into comfortable year-round amenities.</p>
+  <a href="/services/rooftop-deck-turf/">Learn more →</a>
+</div>
       </div>
     </div>
   </section>
@@ -950,6 +961,24 @@ ul { list-style: none; }
           </button>
           <div class="faq-answer">
             <div class="faq-answer-inner">LaSalle installations follow the same pricing as Windsor — typically $8 to $18 per square foot installed depending on site conditions and turf grade. Request a free written estimate for a number specific to your property.</div>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Does artificial grass hold up in Ontario winters with snow and freezing temperatures?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes — modern artificial turf is engineered for Canadian climate conditions. The fibres, backing, and infill are all rated for freeze-thaw cycles. You can leave snow on the turf and it won't damage the surface. Most Windsor homeowners are pleasantly surprised by how well it looks coming out of winter.</div>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Does synthetic turf get too hot in summer?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Artificial turf can absorb heat on very sunny days, though shaded areas and pool-adjacent installations tend to stay cooler. For areas where heat is a concern — like a children's play space — we can discuss infill options that reduce surface temperature. A quick rinse with the hose cools the surface down in minutes.</div>
           </div>
         </div>
       </div>
