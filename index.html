@@ -1023,6 +1023,9 @@ ul { list-style: none; }
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 24px;
     }
+    .services-grid--3col {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     .service-card {
       border: 1px solid var(--border);
@@ -1878,7 +1881,7 @@ ul { list-style: none; }
     </div>
 
     <!-- [Stage 4 computed]: service cards generated dynamically from services_section.items -->
-    <div class="services-grid reveal-group">
+    <div class="services-grid services-grid--3col reveal-group">
       <article class="service-card">
         <div class="service-icon" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
@@ -1889,7 +1892,7 @@ ul { list-style: none; }
       </article>
       <article class="service-card">
         <div class="service-icon" aria-hidden="true">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v6l4 2"/><path d="M8 9H5l-2 6h4"/><path d="M16 9h3l2 6h-4"/><path d="M7 21l2-4h6l2 4"/></svg>
         </div>
         <h3>Playground Turf</h3>
         <p>Safe, cushioned artificial turf for residential and community playground areas. Designed for active play with proper impact absorption and easy cleanup.</p>
@@ -1897,7 +1900,7 @@ ul { list-style: none; }
       </article>
       <article class="service-card">
         <div class="service-icon" aria-hidden="true">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v6l4 2"/><path d="M8 9H5l-2 6h4"/><path d="M16 9h3l2 6h-4"/><path d="M7 21l2-4h6l2 4"/></svg>
         </div>
         <h3>Putting Greens</h3>
         <p>Custom backyard putting greens for Windsor homeowners who want a short-game practice space at home. Built to your layout with performance-grade turf.</p>
@@ -1913,7 +1916,7 @@ ul { list-style: none; }
       </article>
       <article class="service-card">
         <div class="service-icon" aria-hidden="true">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"/><path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.96-1.45-2.344-2.5"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75z"/><path d="M4.42 11.247A13.152 13.152 0 0012 17c2.574 0 5.078-.878 7.58-2.753"/></svg>
         </div>
         <h3>Pet-Friendly Turf</h3>
         <p>Durable, odour-resistant artificial turf designed specifically for homes with dogs and cats. Drains quickly, cleans easily, and holds up to heavy pet traffic.</p>
@@ -1921,7 +1924,7 @@ ul { list-style: none; }
       </article>
       <article class="service-card">
         <div class="service-icon" aria-hidden="true">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
         </div>
         <h3>Rooftop & Deck Turf</h3>
         <p>Weather-rated artificial turf for rooftop patios, balconies, and elevated deck surfaces. Transforms unused outdoor spaces into comfortable year-round amenities.</p>
@@ -2038,7 +2041,7 @@ ul { list-style: none; }
       <!-- STEP 1 -->
       <div class="process-step">
         <div class="process-step-header">
-          <div class="process-step-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <div class="process-step-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
         </div>
         <div class="process-step-body">
           <!-- [Landing Page Content Agent]: Free On-Site Estimate | We visit your Windsor property, measure the area, and discuss your options. You receive a written quote before committing to anything. -->
@@ -2062,7 +2065,7 @@ ul { list-style: none; }
       <!-- STEP 3 -->
       <div class="process-step">
         <div class="process-step-header">
-          <div class="process-step-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <div class="process-step-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg></div>
         </div>
         <div class="process-step-body">
           <!-- [Landing Page Content Agent]: Turf Cutting & Installation | The turf is cut precisely on-site, fitted to every edge, and secured with professional grade fastening. Seams are placed and finished so they're invisible. -->
