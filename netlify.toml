@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "/areas/windsor/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
