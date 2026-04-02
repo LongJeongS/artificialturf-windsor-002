@@ -788,17 +788,17 @@ ul { list-style: none; }
 
     /* Body */
     .post-body { min-width: 0; }
-    .post-intro { font-size: 17px; line-height: 1.75; color: var(--color-text); margin-bottom: 32px; }
+    .post-intro { font-size: 18px; line-height: 1.8; color: var(--color-text); margin-bottom: 36px; }
 
     /* Inline CTA (high-intent posts only) */
-    .post-cta-inline { background: var(--color-primary); color: var(--white); border-radius: var(--radius); padding: 24px 28px; margin-bottom: 36px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-    .post-cta-inline p { font-size: 15px; margin: 0; color: rgba(255,255,255,0.9); flex: 1; }
+    .post-cta-inline { background: var(--color-primary); color: var(--white); border-radius: var(--radius); padding: 24px 28px; margin-bottom: 40px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .post-cta-inline p { font-size: 16px; margin: 0; color: rgba(255,255,255,0.9); flex: 1; }
     .post-cta-inline a { flex-shrink: 0; }
 
     /* Sections */
-    .post-section { margin-bottom: 36px; }
-    .post-section h2 { font-family: var(--font-heading); font-size: clamp(19px, 2.5vw, 24px); font-weight: 700; color: var(--color-primary); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
-    .post-section p { font-size: 15px; line-height: 1.75; color: var(--color-text); margin-bottom: 14px; }
+    .post-section { margin-bottom: 44px; }
+    .post-section h2 { font-family: var(--font-heading); font-size: clamp(20px, 2.5vw, 26px); font-weight: 700; color: var(--color-primary); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--border); }
+    .post-section p { font-size: 16px; line-height: 1.8; color: var(--color-text); margin-bottom: 16px; }
     .post-section p:last-child { margin-bottom: 0; }
     .post-section a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
     .post-section a:hover { color: var(--color-primary); }
@@ -808,12 +808,12 @@ ul { list-style: none; }
     .post-faq h2 { font-family: var(--font-heading); font-size: clamp(19px, 2.5vw, 24px); font-weight: 700; color: var(--color-primary); margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
     .faq-accordion { display: flex; flex-direction: column; gap: 10px; }
     .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); }
-    .faq-question { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 20px; cursor: pointer; font-size: 15px; font-weight: 600; color: var(--color-text); list-style: none; }
+    .faq-question { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 22px; cursor: pointer; font-size: 16px; font-weight: 600; color: var(--color-text); list-style: none; }
     .faq-question::marker, .faq-question::-webkit-details-marker { display: none; }
     .faq-question svg { flex-shrink: 0; transition: transform 0.25s; color: var(--color-accent); }
     .faq-question:hover { background: rgba(0,0,0,0.025); }
     details[open] .faq-question svg { transform: rotate(45deg); }
-    .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-mid); }
+    .faq-answer { padding: 0 22px 18px; font-size: 16px; line-height: 1.75; color: var(--text-mid); }
 
     /* End CTA */
     .post-cta-end { background: var(--color-accent); color: var(--white); border-radius: var(--radius); padding: 32px 36px; margin-top: 44px; text-align: center; }
@@ -825,7 +825,8 @@ ul { list-style: none; }
     .post-sidebar { position: sticky; top: 96px; display: flex; flex-direction: column; gap: 24px; }
     .sidebar-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow-sm); }
     .sidebar-card h3 { font-family: var(--font-heading); font-size: 15px; font-weight: 700; color: var(--color-primary); margin-bottom: 14px; }
-    .sidebar-card p { font-size: 14px; line-height: 1.6; color: var(--text-mid); margin-bottom: 14px; }
+    .sidebar-card p { font-size: 14px; line-height: 1.6; color: var(--text-mid); margin-bottom: 16px; }
+    .sidebar-cta-btn { display: block; width: 100%; text-align: center; box-sizing: border-box; }
     .sidebar-services-list { display: flex; flex-direction: column; gap: 8px; }
     .sidebar-service-link { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px; background: var(--color-bg); border-radius: var(--radius); font-size: 13px; font-weight: 600; color: var(--color-primary); text-decoration: none; transition: background var(--transition), color var(--transition); }
     .sidebar-service-link:hover { background: var(--color-primary); color: var(--white); }
@@ -1007,7 +1008,7 @@ ul { list-style: none; }
           <div class="sidebar-card" style="background:var(--color-primary);border-color:var(--color-primary);">
             <h3 style="color:var(--white);">Get a Free Quote</h3>
             <p style="color:rgba(255,255,255,0.85);">Serving Windsor and surrounding areas. No obligation.</p>
-            <a href="/contact/" class="btn btn-primary" style="width:100%;text-align:center;background:var(--color-accent);display:block;">Request Quote</a>
+            <a href="/contact/" class="btn btn-primary sidebar-cta-btn" style="background:var(--color-accent);">Request Quote</a>
             <a href="tel:{{CALLRAIL_NUMBER}}" style="display:block;text-align:center;margin-top:10px;font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);">Or call {{CALLRAIL_NUMBER}}</a>
           </div>
 

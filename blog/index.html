@@ -727,7 +727,9 @@ ul { list-style: none; }
     .blog-grid-section { padding: 72px 0 88px; background: var(--color-bg); }
     .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
 
-    .blog-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--border); display: flex; flex-direction: column; transition: box-shadow var(--transition), transform var(--transition); }
+    .blog-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--border); display: flex; flex-direction: column; transition: box-shadow var(--transition), transform var(--transition); position: relative; cursor: pointer; }
+    .blog-card-link-overlay { position: absolute; inset: 0; z-index: 1; }
+    .blog-card-body a { position: relative; z-index: 2; }
     .blog-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.12); transform: translateY(-3px); }
     .blog-card-img { position: relative; aspect-ratio: 16/9; overflow: hidden; background: var(--border); }
     .blog-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--transition); }
@@ -829,6 +831,7 @@ ul { list-style: none; }
     <div class="container">
 <div class="blog-grid">
 <article class="blog-card">
+  <a href="/blog/how-much-does-artificial-turf-cost-windsor/" class="blog-card-link-overlay" aria-label="How Much Does Artificial Turf Cost in Windsor, ON?"></a>
   <div class="blog-card-img">
     <img src="/images/blog/how-much-does-artificial-turf-cost-windsor.jpg" alt="How Much Does Artificial Turf Cost in Windsor, ON?" loading="lazy">
     <span class="blog-card-badge">Cost Guide</span>
@@ -837,10 +840,11 @@ ul { list-style: none; }
     <p class="blog-card-date">2026-04-02</p>
     <h2 class="blog-card-title">How Much Does Artificial Turf Cost in Windsor, ON?</h2>
     <p class="blog-card-excerpt">Wondering what artificial turf installation costs in Windsor, Ontario? Here's a realistic breakdown of pricing, what affects your quote, and how to avoid surprises.</p>
-    <a href="/blog/how-much-does-artificial-turf-cost-windsor/" class="blog-card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="/blog/how-much-does-artificial-turf-cost-windsor/" class="blog-card-link" aria-hidden="true" tabindex="-1">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
   </div>
 </article>
 <article class="blog-card">
+  <a href="/blog/how-to-choose-artificial-turf-windsor/" class="blog-card-link-overlay" aria-label="How to Choose Artificial Turf for Your Windsor Home"></a>
   <div class="blog-card-img">
     <img src="/images/blog/how-to-choose-artificial-turf-windsor.jpg" alt="How to Choose Artificial Turf for Your Windsor Home" loading="lazy">
     <span class="blog-card-badge">How-To</span>
@@ -849,10 +853,11 @@ ul { list-style: none; }
     <p class="blog-card-date">2026-04-02</p>
     <h2 class="blog-card-title">How to Choose Artificial Turf for Your Windsor Home</h2>
     <p class="blog-card-excerpt">With dozens of artificial turf products on the market, it's easy to get confused. Here's a practical guide to choosing the right turf for your Windsor yard — based on how you'll actually use it.</p>
-    <a href="/blog/how-to-choose-artificial-turf-windsor/" class="blog-card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="/blog/how-to-choose-artificial-turf-windsor/" class="blog-card-link" aria-hidden="true" tabindex="-1">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
   </div>
 </article>
 <article class="blog-card">
+  <a href="/blog/artificial-turf-vs-natural-grass-windsor/" class="blog-card-link-overlay" aria-label="Artificial Turf vs. Natural Grass: What's Right for Windsor Homeowners?"></a>
   <div class="blog-card-img">
     <img src="/images/blog/artificial-turf-vs-natural-grass-windsor.jpg" alt="Artificial Turf vs. Natural Grass: What's Right for Windsor Homeowners?" loading="lazy">
     <span class="blog-card-badge">Comparison</span>
@@ -861,10 +866,11 @@ ul { list-style: none; }
     <p class="blog-card-date">2026-04-02</p>
     <h2 class="blog-card-title">Artificial Turf vs. Natural Grass: What's Right for Windsor Homeowners?</h2>
     <p class="blog-card-excerpt">Is artificial turf actually better than natural grass for Windsor homes? We break down the real differences — cost, maintenance, performance through Ontario winters, and which makes more sense for your yard.</p>
-    <a href="/blog/artificial-turf-vs-natural-grass-windsor/" class="blog-card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="/blog/artificial-turf-vs-natural-grass-windsor/" class="blog-card-link" aria-hidden="true" tabindex="-1">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
   </div>
 </article>
 <article class="blog-card">
+  <a href="/blog/why-artificial-turf-looks-fake-and-how-to-avoid-it/" class="blog-card-link-overlay" aria-label="Why Artificial Turf Looks Fake — and How to Avoid It in Windsor"></a>
   <div class="blog-card-img">
     <img src="/images/blog/why-artificial-turf-looks-fake-and-how-to-avoid-it.jpg" alt="Why Artificial Turf Looks Fake — and How to Avoid It in Windsor" loading="lazy">
     <span class="blog-card-badge">Tips & Advice</span>
@@ -873,10 +879,11 @@ ul { list-style: none; }
     <p class="blog-card-date">2026-04-02</p>
     <h2 class="blog-card-title">Why Artificial Turf Looks Fake — and How to Avoid It in Windsor</h2>
     <p class="blog-card-excerpt">Not all artificial turf looks convincing. Some installations look obviously plastic from across the street. Here's what separates a great turf installation from a bad one — and how to make sure yours doesn't end up in the second category.</p>
-    <a href="/blog/why-artificial-turf-looks-fake-and-how-to-avoid-it/" class="blog-card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="/blog/why-artificial-turf-looks-fake-and-how-to-avoid-it/" class="blog-card-link" aria-hidden="true" tabindex="-1">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
   </div>
 </article>
 <article class="blog-card">
+  <a href="/blog/artificial-turf-windsor-winters-what-you-need-to-know/" class="blog-card-link-overlay" aria-label="Artificial Turf Through Windsor Winters: What You Need to Know"></a>
   <div class="blog-card-img">
     <img src="/images/blog/artificial-turf-windsor-winters-what-you-need-to-know.jpg" alt="Artificial Turf Through Windsor Winters: What You Need to Know" loading="lazy">
     <span class="blog-card-badge">Local Guide</span>
@@ -885,7 +892,7 @@ ul { list-style: none; }
     <p class="blog-card-date">2026-04-02</p>
     <h2 class="blog-card-title">Artificial Turf Through Windsor Winters: What You Need to Know</h2>
     <p class="blog-card-excerpt">Windsor winters are hard on natural lawns — brown grass, mud, and bare patches from November through April. Artificial turf changes all of that. Here's how quality turf actually performs through an Ontario winter.</p>
-    <a href="/blog/artificial-turf-windsor-winters-what-you-need-to-know/" class="blog-card-link">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="/blog/artificial-turf-windsor-winters-what-you-need-to-know/" class="blog-card-link" aria-hidden="true" tabindex="-1">Read more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
   </div>
 </article>
 </div>
