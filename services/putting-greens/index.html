@@ -8,16 +8,16 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- service_page_meta_title is set per-service by stage4 -->
-  <title>Putting Green Installation Windsor | Windsor Turf Pros</title>
+  <title>Putting Green Installation Windsor | Windsor Turf Pros · {{CALLRAIL_NUMBER}}</title>
   <meta name="description" content="Custom backyard putting greens in Windsor Ontario. Windsor Turf Pros designs and installs to your layout — free estimates, workmanship warranty. Get a quote today.">
   <link rel="canonical" href="https://artificialturfwindsor.ca/services/putting-greens/">
   <!-- Open Graph -->
-  <meta property="og:title" content="Putting Green Installation Windsor | Windsor Turf Pros">
+  <meta property="og:title" content="Putting Green Installation Windsor | Windsor Turf Pros · {{CALLRAIL_NUMBER}}">
   <meta property="og:description" content="Custom backyard putting greens in Windsor Ontario. Windsor Turf Pros designs and installs to your layout — free estimates, workmanship warranty. Get a quote today.">
   <meta property="og:url" content="https://artificialturfwindsor.ca/services/putting-greens/">
   <meta property="og:image" content="/images/service_3_hero.webp">
   <meta property="og:type" content="website">
-  <!-- Service + BreadcrumbList schema -->
+  <!-- Service + BreadcrumbList schema (Item 7: @id provider reference, full structured areaServed, category) -->
   <script type="application/ld+json">
   [
     {
@@ -25,8 +25,19 @@
       "@type": "Service",
       "name": "Putting Greens",
       "description": "Custom backyard putting greens in Windsor Ontario. Windsor Turf Pros designs and installs to your layout — free estimates, workmanship warranty. Get a quote today.",
-      "provider": { "@type": "LocalBusiness", "name": "Windsor Turf Pros", "url": "https://artificialturfwindsor.ca" },
-      "areaServed": { "@type": "City", "name": "{{city}}" },
+      "category": "Artificial Turf Services",
+      "provider": { "@id": "https://artificialturfwindsor.ca#organization" },
+      "areaServed": [
+        {"@type": "City", "name": "Windsor", "address": {"@type": "PostalAddress", "addressLocality": "Windsor", "addressRegion": "ON", "postalCode": "N9A", "addressCountry": "CA"}},
+      {"@type": "City", "name": "LaSalle", "address": {"@type": "PostalAddress", "addressLocality": "LaSalle", "addressRegion": "ON", "postalCode": "N9J", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Tecumseh", "address": {"@type": "PostalAddress", "addressLocality": "Tecumseh", "addressRegion": "ON", "postalCode": "N8N", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Amherstburg", "address": {"@type": "PostalAddress", "addressLocality": "Amherstburg", "addressRegion": "ON", "postalCode": "N9V", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Lakeshore", "address": {"@type": "PostalAddress", "addressLocality": "Lakeshore", "addressRegion": "ON", "postalCode": "N0R", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Essex", "address": {"@type": "PostalAddress", "addressLocality": "Essex", "addressRegion": "ON", "postalCode": "N8M", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Kingsville", "address": {"@type": "PostalAddress", "addressLocality": "Kingsville", "addressRegion": "ON", "postalCode": "N9Y", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Leamington", "address": {"@type": "PostalAddress", "addressLocality": "Leamington", "addressRegion": "ON", "postalCode": "N8H", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Harrow", "address": {"@type": "PostalAddress", "addressLocality": "Harrow", "addressRegion": "ON", "postalCode": "N0R", "addressCountry": "CA"}}
+      ],
       "url": "https://artificialturfwindsor.ca/services/putting-greens/"
     },
     {
@@ -41,7 +52,7 @@
   </script>
   <!-- FAQPage schema for service-specific Q&A -->
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How realistic is the putting experience on an artificial putting green?", "acceptedAnswer": {"@type": "Answer", "text": "Using stimp-rated turf and a proper base, our greens deliver consistent, realistic roll. Most golfers find the feel comparable to a club green after a short adjustment period."}}, {"@type": "Question", "name": "Can I add a chipping fringe around my putting green in Windsor?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We commonly install multi-zone setups with a chipping fringe and rough perimeter — just bring your layout ideas to the free estimate."}}, {"@type": "Question", "name": "What maintenance does a backyard putting green need?", "acceptedAnswer": {"@type": "Answer", "text": "Very little — occasional brushing to keep fibres upright and a rinse after heavy debris accumulation. There's no irrigation, no mowing, and no seasonal shutdown."}}]}
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How realistic is the putting experience on an artificial putting green?", "acceptedAnswer": {"@type": "Answer", "text": "Using stimp-rated turf and a proper base, our greens deliver consistent, realistic roll. Most golfers find the feel comparable to a club green after a short adjustment period."}}, {"@type": "Question", "name": "Can I add a chipping fringe around my putting green in Windsor?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We commonly install multi-zone setups with a chipping fringe and rough perimeter — just bring your layout ideas to the free estimate."}}, {"@type": "Question", "name": "What maintenance does a backyard putting green need?", "acceptedAnswer": {"@type": "Answer", "text": "Very little — occasional brushing to keep fibres upright and a rinse after heavy debris accumulation. There's no irrigation, no mowing, and no seasonal shutdown."}}, {"@type": "Question", "name": "How long does a custom putting green take to install in Windsor?", "acceptedAnswer": {"@type": "Answer", "text": "Most residential greens — single-hole through three-hole layouts — install in one to two days. The base build takes the longest because contouring has to be exact for the roll to behave correctly; turf cutting and cup-setting move quickly once the base passes a level check."}}, {"@type": "Question", "name": "Do I need to water, fertilize, or seed a putting green to keep it playing right?", "acceptedAnswer": {"@type": "Answer", "text": "No watering, no seeding, no aeration. Maintenance is brushing the fibres upright every few months, topping up silica sand once a year, and rinsing debris off as needed. There's no irrigation cost and no seasonal shutdown — the green plays the same way in April and October."}}]}
   </script>
   <style>
     /* ═══════════════════════════════════════════════════════════════
@@ -472,6 +483,13 @@ ul { list-style: none; }
   color: var(--white);
   margin-bottom: 18px;
 }
+/* Item 1: Footer brand link (company name links to homepage from every sub-page). */
+.footer-brand-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+.footer-brand-link:hover { opacity: 0.75; }
 .footer-col p { font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
 .footer-col ul li { margin-bottom: 10px; }
 .footer-col ul li a {
@@ -554,7 +572,7 @@ ul { list-style: none; }
 }
 .testimonial-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 
-.stars { color: var(--color-accent); font-size: 18px; letter-spacing: 2px; margin-bottom: 14px; }
+/* Item 3: .stars rule removed — per-testimonial star displays were a fake-rating surface. */
 
 .testimonial-quote {
   font-size: 16px;
@@ -756,6 +774,31 @@ ul { list-style: none; }
     .svc-hero p { font-size: 18px; color: rgba(255,255,255,0.85); max-width: 520px; margin-bottom: 32px; line-height: 1.6; }
     .svc-hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
+    /* Item 5: Local intro section (between hero and benefits) */
+    .svc-local-intro { padding: 64px 0 0; }
+    .svc-local-intro .container { max-width: 800px; }
+    .svc-local-intro h2 { font-size: clamp(24px, 3.5vw, 32px); margin-bottom: 16px; }
+    .svc-local-intro-body { font-size: 17px; line-height: 1.75; color: var(--text-mid); }
+
+    /* Item 5: Materials & Specifications grid */
+    .svc-specs { padding: 72px 0; }
+    .specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 36px; }
+    .spec-item { background: var(--color-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 20px; display: flex; align-items: flex-start; gap: 14px; transition: transform var(--transition), box-shadow var(--transition); }
+    .spec-item:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+    .spec-icon { width: 40px; height: 40px; background: var(--white); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--color-primary); }
+    .spec-icon svg { width: 22px; height: 22px; }
+    .spec-text { flex: 1; min-width: 0; }
+    .spec-label { font-size: 13px; font-weight: 700; color: var(--color-text); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+    .spec-value { font-size: 14px; line-height: 1.55; color: var(--text-mid); }
+
+    /* Item 5: Ideal Applications grid (after process, before FAQs) */
+    .svc-applications { padding: 72px 0; background: var(--color-bg); }
+    .applications-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 36px; }
+    .application-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; transition: transform var(--transition), box-shadow var(--transition); }
+    .application-item:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+    .application-item h3 { font-size: 16px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px; }
+    .application-item p { font-size: 14px; line-height: 1.6; color: var(--text-mid); }
+
     /* Benefits */
     .svc-benefits { padding: 72px 0; background: var(--color-bg); }
     .benefits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 36px; }
@@ -860,6 +903,7 @@ ul { list-style: none; }
         <li><a href="/reviews/">Reviews</a></li>
         <li><a href="/faq/">FAQ</a></li>
         <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
       <div class="nav-actions">
         <a href="tel:+1 (226) 212-0631" class="nav-phone" aria-label="Call us"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (226) 212-0631</a>
@@ -879,6 +923,7 @@ ul { list-style: none; }
     <a href="/reviews/" onclick="closeMenu()">Reviews</a>
     <a href="/faq/" onclick="closeMenu()">FAQ</a>
     <a href="/blog/" onclick="closeMenu()">Blog</a>
+    <a href="/contact/" onclick="closeMenu()">Contact</a>
     <a href="tel:+1 (226) 212-0631" onclick="closeMenu()" style="display:flex;align-items:center;gap:8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (226) 212-0631</a>
     <a href="/contact/" class="btn btn-primary mobile-cta" onclick="closeMenu()">Get a Free Estimate</a>
   </nav>
@@ -899,6 +944,14 @@ ul { list-style: none; }
           Call +1 (226) 212-0631
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- ── Item 5: Local Intro ─────────────────────────────────────────── -->
+  <section class="svc-local-intro" aria-labelledby="local-intro-heading">
+    <div class="container">
+      <h2 id="local-intro-heading">Custom Putting Greens for Windsor and Essex County Homes</h2>
+      <p class="svc-local-intro-body">A backyard putting green only works if it rolls true year after year — through clay-soil settlement, Windsor's freeze-thaw cycles, and the kind of sun exposure most south-facing Essex County yards get. That means a different base spec than a standard backyard install: a tighter aggregate, more careful contouring during the build, and a low-profile turf rated to a specific stimp range. We design every green around the layout you want — single-hole practice, multi-hole short course, or pitching-and-putting combo — and tune the contours during the base build so the ball behaves the way it should.</p>
     </div>
   </section>
 
@@ -927,6 +980,52 @@ ul { list-style: none; }
           <div class="benefit-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></div>
           <div class="benefit-title">Built in One to Two Days</div>
           <div class="benefit-body">Most custom putting greens are installed in one to two days regardless of size or layout complexity.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Item 5: Materials & Specifications ────────────────────────────── -->
+  <section class="svc-specs" aria-labelledby="specs-heading">
+    <div class="container">
+      <span class="section-eyebrow">Materials &amp; Specs</span>
+      <h2 id="specs-heading" class="section-title">What We Use for Putting Greens</h2>
+      <p class="section-subtitle">Industry-standard materials and specifications you can rely on.</p>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <div class="spec-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 000 20"/><path d="M12 2a10 10 0 010 20"/><path d="M2 12h20"/></svg></div>
+          <div class="spec-text">
+            <div class="spec-label">Pile Height</div>
+            <div class="spec-value">0.4–0.6 inch (industry typical for putting surfaces)</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="spec-text">
+            <div class="spec-label">Yarn Weight</div>
+            <div class="spec-value">40–55 oz/yd² nylon-blend short pile</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v1m0 18v1M4.22 4.22l.7.7m14.14 14.14l.7.7M1 12h1m20 0h1M4.22 19.78l.7-.7M18.36 5.64l.7-.7"/><circle cx="12" cy="12" r="4"/></svg></div>
+          <div class="spec-text">
+            <div class="spec-label">Drainage Rate</div>
+            <div class="spec-value">30+ inches per hour through permeable backing</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg></div>
+          <div class="spec-text">
+            <div class="spec-label">Warranty Coverage</div>
+            <div class="spec-value">Manufacturer + workmanship coverage on every install</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14l-5-5-5 5"/><path d="M17 19l-5-5-5 5"/><line x1="12" y1="14" x2="12" y2="22"/></svg></div>
+          <div class="spec-text">
+            <div class="spec-label">Infill Type</div>
+            <div class="spec-value">Top-dressed silica sand for true, consistent roll</div>
+          </div>
         </div>
       </div>
     </div>
@@ -966,6 +1065,36 @@ ul { list-style: none; }
     </div>
   </section>
 
+  <!-- ── Item 5: Ideal Applications ────────────────────────────────────── -->
+  <section class="svc-applications" aria-labelledby="applications-heading">
+    <div class="container">
+      <span class="section-eyebrow">Where It Works</span>
+      <h2 id="applications-heading" class="section-title">Ideal Applications for Putting Greens</h2>
+      <div class="applications-grid">
+        <div class="application-item">
+          <h3>Single Practice Greens</h3>
+          <p>Compact one-cup home greens for solo putting drills in Windsor backyards and side yards.</p>
+        </div>
+        <div class="application-item">
+          <h3>Multi-Hole Layouts</h3>
+          <p>Two- to five-cup designs with breaks, contours, and a fringe perimeter for full short-game work.</p>
+        </div>
+        <div class="application-item">
+          <h3>Chipping Stations</h3>
+          <p>Combined putting and chipping zones with a rough fringe so you can work the full short game at home.</p>
+        </div>
+        <div class="application-item">
+          <h3>Rooftop and Deck Greens</h3>
+          <p>Elevated putting greens on rooftop patios and decks across downtown Windsor and Walkerville.</p>
+        </div>
+        <div class="application-item">
+          <h3>Custom Course Replicas</h3>
+          <p>Owner-designed greens built from a sketch, photo, or favourite course layout reference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── Service FAQs ──────────────────────────────────────────────────── -->
   <section class="svc-faqs" aria-labelledby="svc-faq-heading">
     <div class="container">
@@ -983,6 +1112,15 @@ ul { list-style: none; }
         <details class="svc-faq-item">
           <summary class="svc-faq-question">What maintenance does a backyard putting green need?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
           <div class="svc-faq-answer">Very little — occasional brushing to keep fibres upright and a rinse after heavy debris accumulation. There's no irrigation, no mowing, and no seasonal shutdown.</div>
+        </details>
+        <!-- Item 5: FAQs 4 + 5 added -->
+        <details class="svc-faq-item">
+          <summary class="svc-faq-question">How long does a custom putting green take to install in Windsor?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="svc-faq-answer">Most residential greens — single-hole through three-hole layouts — install in one to two days. The base build takes the longest because contouring has to be exact for the roll to behave correctly; turf cutting and cup-setting move quickly once the base passes a level check.</div>
+        </details>
+        <details class="svc-faq-item">
+          <summary class="svc-faq-question">Do I need to water, fertilize, or seed a putting green to keep it playing right?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="svc-faq-answer">No watering, no seeding, no aeration. Maintenance is brushing the fibres upright every few months, topping up silica sand once a year, and rinsing debris off as needed. There's no irrigation cost and no seasonal shutdown — the green plays the same way in April and October.</div>
         </details>
       </div>
       <div style="margin-top:28px; text-align:center;">
@@ -1052,9 +1190,9 @@ ul { list-style: none; }
 
 <footer id="site-footer" role="contentinfo">
   <div class="footer-top"><div class="container"><div class="footer-grid">
-    <div class="footer-col"><h4>Windsor Turf Pros</h4><p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p><address class="footer-nap" style="font-style:normal;"><span>Windsor, Ontario</span><br><a href="tel:+1 (226) 212-0631" style="color:rgba(255,255,255,0.65);">+1 (226) 212-0631</a></address></div>
+    <div class="footer-col"><h4><a href="/" class="footer-brand-link">Windsor Turf Pros</a></h4><p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p><address class="footer-nap" style="font-style:normal;"><span>Windsor, Ontario</span><br><a href="tel:+1 (226) 212-0631" style="color:rgba(255,255,255,0.65);">+1 (226) 212-0631</a></address></div>
     <div class="footer-col"><h4>Services</h4><ul><li><a href="/services/backyard-turf/">Backyard Turf</a></li><li><a href="/services/playground-turf/">Playground Turf</a></li><li><a href="/services/putting-greens/">Putting Greens</a></li><li><a href="/services/swimming-pool-turf/">Swimming Pool Turf</a></li></ul></div>
-    <div class="footer-col"><h4>Enquiry</h4><ul><li><a href="/contact/">Request Quote</a></li><li><a href="/about/">About Us</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/privacy">Privacy Policy</a></li></ul></div>
+    <div class="footer-col"><h4>Enquiry</h4><ul><li><a href="/contact/">Request Quote</a></li><li><a href="/about/">About Us</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Service</a></li></ul></div>
     <div class="footer-col"><h4>Serving Essex County</h4><ul><li><a href="/">Windsor</a></li><li><a href="/areas/lasalle/">LaSalle</a></li><li><a href="/areas/tecumseh/">Tecumseh</a></li><li><a href="/areas/amherstburg/">Amherstburg</a></li><li><a href="/areas/lakeshore/">Lakeshore</a></li><li><a href="/areas/essex/">Essex</a></li></ul></div>
   </div></div></div>
   <div class="container"><div class="footer-bottom"><span>© 2026 Windsor Turf Pros. Licensed &amp; Insured.</span><span>Windsor, Ontario, Canada</span></div></div>

@@ -13,7 +13,7 @@
        Populates all <head> meta tags, title, canonical, schema
   ═══════════════════════════════════════════════════════════ -->
 
-  <title>Artificial Turf Installation Windsor | Windsor Turf Pros</title>
+  <title>Artificial Turf Installation Windsor | Windsor Turf Pros · +1 (226) 212-0631</title>
   <meta name="description" content="Windsor's trusted artificial turf installers. Licensed, insured, workmanship warranty on every job. Free same-week estimates — serving Windsor and Essex County.">
   <meta name="keywords" content="artificial turf installation Windsor Ontario, artificial grass Windsor Ontario, synthetic grass installation Windsor, low-maintenance lawn, pet-friendly turf, residential artificial grass">
   <link rel="canonical" href="https://artificialturfwindsor.ca">
@@ -31,14 +31,20 @@
        LocalBusiness + FAQPage schema for rich results
   ═══════════════════════════════════════════════════════════ -->
 
-  <!-- [SEO & Metadata Agent]:  -->
+  <!-- [SEO & Metadata Agent]: LocalBusiness JSON-LD
+       Item 3: aggregateRating removed (no fake reviews).
+       Item 7: added @id, logo, hasOfferCatalog, paymentAccepted, currenciesAccepted;
+               areaServed now uses structured City objects with PostalAddress (FSA) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://artificialturfwindsor.ca#organization",
     "name": "Windsor Turf Pros",
     "description": "Windsor's trusted artificial turf installers. Licensed, insured, workmanship warranty on every job. Free same-week estimates — serving Windsor and Essex County.",
     "url": "https://artificialturfwindsor.ca",
+    "logo": "https://artificialturfwindsor.ca/favicon.svg",
+    "image": "https://artificialturfwindsor.ca/favicon.svg",
     "telephone": "+1 (226) 212-0631",
     "email": "info@artificialturfwindsor.ca",
     "address": {
@@ -68,16 +74,74 @@
         "closes": "14:00"
       }
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "114"
-    },
     "areaServed": [
-      "Windsor", "LaSalle", "Tecumseh", "Amherstburg", "Lakeshore", "Essex", "Kingsville", "Leamington", "Harrow"
+      {"@type": "City", "name": "Windsor", "address": {"@type": "PostalAddress", "addressLocality": "Windsor", "addressRegion": "ON", "postalCode": "N9A", "addressCountry": "CA"}},
+      {"@type": "City", "name": "LaSalle", "address": {"@type": "PostalAddress", "addressLocality": "LaSalle", "addressRegion": "ON", "postalCode": "N9J", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Tecumseh", "address": {"@type": "PostalAddress", "addressLocality": "Tecumseh", "addressRegion": "ON", "postalCode": "N8N", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Amherstburg", "address": {"@type": "PostalAddress", "addressLocality": "Amherstburg", "addressRegion": "ON", "postalCode": "N9V", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Lakeshore", "address": {"@type": "PostalAddress", "addressLocality": "Lakeshore", "addressRegion": "ON", "postalCode": "N0R", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Essex", "address": {"@type": "PostalAddress", "addressLocality": "Essex", "addressRegion": "ON", "postalCode": "N8M", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Kingsville", "address": {"@type": "PostalAddress", "addressLocality": "Kingsville", "addressRegion": "ON", "postalCode": "N9Y", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Leamington", "address": {"@type": "PostalAddress", "addressLocality": "Leamington", "addressRegion": "ON", "postalCode": "N8H", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Harrow", "address": {"@type": "PostalAddress", "addressLocality": "Harrow", "addressRegion": "ON", "postalCode": "N0R", "addressCountry": "CA"}}
     ],
+    "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Windsor Turf Pros Services",
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Backyard Turf",
+        "url": "https://artificialturfwindsor.ca/services/backyard-turf/"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Playground Turf",
+        "url": "https://artificialturfwindsor.ca/services/playground-turf/"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Putting Greens",
+        "url": "https://artificialturfwindsor.ca/services/putting-greens/"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Swimming Pool Turf",
+        "url": "https://artificialturfwindsor.ca/services/swimming-pool-turf/"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Pet-Friendly Turf",
+        "url": "https://artificialturfwindsor.ca/services/pet-friendly-turf/"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Rooftop & Deck Turf",
+        "url": "https://artificialturfwindsor.ca/services/rooftop-deck-turf/"
+      }
+    }
+  ]
+},
     "priceRange": "$$",
-    "image": "/images/hero_bg.webp"
+    "paymentAccepted": "Cash, Credit Card, E-Transfer",
+    "currenciesAccepted": "CAD"
   }
 </script>
 
@@ -560,6 +624,13 @@ ul { list-style: none; }
   color: var(--white);
   margin-bottom: 18px;
 }
+/* Item 1: Footer brand link (company name links to homepage from every sub-page). */
+.footer-brand-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+.footer-brand-link:hover { opacity: 0.75; }
 .footer-col p { font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
 .footer-col ul li { margin-bottom: 10px; }
 .footer-col ul li a {
@@ -642,7 +713,7 @@ ul { list-style: none; }
 }
 .testimonial-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 
-.stars { color: var(--color-accent); font-size: 18px; letter-spacing: 2px; margin-bottom: 14px; }
+/* Item 3: .stars rule removed — per-testimonial star displays were a fake-rating surface. */
 
 .testimonial-quote {
   font-size: 16px;
@@ -939,28 +1010,8 @@ ul { list-style: none; }
       gap: 8px;
     }
 
-    /* [Company Identity Agent]: 4.8 | 114 */
-    .hero-rating {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 20px;
-    }
-    .hero-rating-stars {
-      color: var(--color-accent);
-      font-size: 16px;
-      letter-spacing: 2px;
-      line-height: 1;
-    }
-    .hero-rating-text {
-      font-size: 13px;
-      color: rgba(255,255,255,0.75);
-      font-weight: 400;
-    }
-    .hero-rating-text strong {
-      color: var(--white);
-      font-weight: 700;
-    }
+    /* Item 3: .hero-rating / .hero-rating-stars / .hero-rating-text removed —
+       hero "5-Star Google Rating" badge was a fake-rating surface. */
 
     /* ═══════════════════════════════════════════
        ── SECTION 3: TRUST BAND ──
@@ -1725,6 +1776,7 @@ ul { list-style: none; }
         <li><a href="/reviews/">Reviews</a></li>
         <li><a href="/faq/">FAQ</a></li>
         <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
@@ -1756,6 +1808,7 @@ ul { list-style: none; }
     <a href="/reviews/" onclick="closeMenu()">Reviews</a>
     <a href="/faq/" onclick="closeMenu()">FAQ</a>
     <a href="/blog/" onclick="closeMenu()">Blog</a>
+    <a href="/contact/" onclick="closeMenu()">Contact</a>
     <a href="tel:+1 (226) 212-0631" onclick="closeMenu()" style="display:flex;align-items:center;gap:8px;">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
       +1 (226) 212-0631
@@ -1800,12 +1853,7 @@ ul { list-style: none; }
         </a>
       </div>
 
-      <div class="hero-rating" aria-label="5-Star Google Rating">
-        <span class="hero-rating-stars" aria-hidden="true">★★★★★</span>
-        <span class="hero-rating-text">
-          <strong>5-Star</strong> Google Rating
-        </span>
-      </div>
+      <!-- Item 3: hero "5-Star Google Rating" badge removed (fake-rating compliance). -->
 
     </div>
   </div>
@@ -2212,7 +2260,6 @@ ul { list-style: none; }
       <!-- TESTIMONIAL 1 -->
       <!-- [Company Identity Agent]: Windsor Turf Pros did our backyard in one day and left the place spotless. The turf looks so good that three neighbours have already asked for their number. Absolutely worth every penny. | Chris M. | Walkerville -->
       <article class="testimonial-card">
-        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
         <blockquote class="testimonial-quote">
           "Windsor Turf Pros did our backyard in one day and left the place spotless. The turf looks so good that three neighbours have already asked for their number. Absolutely worth every penny."
           <!-- Example: "Windsor Turf Pros did an incredible job. They were polite, fast, and the cedar fence looks like a piece of furniture. Highly recommend them for anyone in the Niagara Region." -->
@@ -2231,7 +2278,6 @@ ul { list-style: none; }
       <!-- TESTIMONIAL 2 -->
       <!-- [Company Identity Agent]: The team walked me through everything before the job started — no surprises, no hidden costs. The front lawn has never looked better and I don't have to touch a mower again. | Alicia T. | Riverside -->
       <article class="testimonial-card">
-        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
         <blockquote class="testimonial-quote">
           "The team walked me through everything before the job started — no surprises, no hidden costs. The front lawn has never looked better and I don't have to touch a mower again."
         </blockquote>
@@ -2247,7 +2293,6 @@ ul { list-style: none; }
       <!-- TESTIMONIAL 3 -->
       <!-- [Company Identity Agent]: We have two golden retrievers and the old lawn was a mud disaster every spring. The pet turf has been a game changer — easy to rinse, no smell, and the dogs love it. | Marco D. | South Windsor -->
       <article class="testimonial-card">
-        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
         <blockquote class="testimonial-quote">
           "We have two golden retrievers and the old lawn was a mud disaster every spring. The pet turf has been a game changer — easy to rinse, no smell, and the dogs love it."
         </blockquote>
@@ -2284,18 +2329,18 @@ ul { list-style: none; }
         <div class="stat-label">Projects Completed</div>
       </div>
 
-      <!-- [Landing Page Content Agent]: 9 | Communities Served -->
+      <!-- [Landing Page Content Agent]: 9 | Essex County Communities -->
       <!-- Example: "6" / "Years in Business" -->
       <div class="stat-item">
         <div class="stat-value">9</div>
-        <div class="stat-label">Communities Served</div>
+        <div class="stat-label">Essex County Communities</div>
       </div>
 
-      <!-- [Landing Page Content Agent]: 114 | Five-Star Reviews -->
-      <!-- Example: "127" / "Five-Star Reviews" -->
+      <!-- [Landing Page Content Agent]: Same Week | Free Estimate Turnaround -->
+      <!-- Example: "10+" / "Communities Served" (Item 3: review-count and rating-based stats forbidden) -->
       <div class="stat-item">
-        <div class="stat-value">114</div>
-        <div class="stat-label">Five-Star Reviews</div>
+        <div class="stat-value">Same Week</div>
+        <div class="stat-label">Free Estimate Turnaround</div>
       </div>
 
     </div>
@@ -2551,7 +2596,7 @@ ul { list-style: none; }
       <!-- RIGHT: Lead capture form -->
       <div class="contact-form reveal" style="transition-delay:100ms;">
         <form
-          action="https://leads-proxy.jeongpark95.workers.dev"
+          action="#"
           method="POST"
           name="artificialturf-windsor-002-contact"
           data-leads-form
@@ -2598,8 +2643,8 @@ ul { list-style: none; }
 
           <p class="form-disclaimer">
             By submitting, you agree to be contacted about your project.
-            <!-- [Deployment Agent]: /privacy -->
-            <a href="/privacy" style="color: var(--text-light); text-decoration: underline;">Privacy Policy</a>
+            <!-- [Deployment Agent]: /privacy/ -->
+            <a href="/privacy/" style="color: var(--text-light); text-decoration: underline;">Privacy Policy</a>
           </p>
 
         </form>
@@ -2630,8 +2675,8 @@ ul { list-style: none; }
 
         <!-- COL 1: About + NAP -->
         <div class="footer-col">
-          <!-- [Company Identity Agent]: Windsor Turf Pros -->
-          <h4>Windsor Turf Pros</h4>
+          <!-- [Company Identity Agent]: Windsor Turf Pros (Item 1: linked to homepage) -->
+          <h4><a href="/" class="footer-brand-link">Windsor Turf Pros</a></h4>
           <!-- [Landing Page Content Agent]: Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities. -->
           <p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p>
           <!-- Example: "Niagara Region's trusted fence builders since 2014. Family-operated and obsessed with quality." -->
@@ -2668,8 +2713,10 @@ ul { list-style: none; }
             <li><a href="/reviews/">Reviews</a></li>
             <li><a href="/faq/">FAQ</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <!-- [Deployment Agent]: /privacy -->
-            <li><a href="/privacy">Privacy Policy</a></li>
+            <!-- [Deployment Agent]: /privacy/ -->
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <!-- Item 4: Terms of Service link -->
+            <li><a href="/terms/">Terms of Service</a></li>
           </ul>
         </div>
 

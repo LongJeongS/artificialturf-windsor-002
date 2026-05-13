@@ -482,6 +482,13 @@ ul { list-style: none; }
   color: var(--white);
   margin-bottom: 18px;
 }
+/* Item 1: Footer brand link (company name links to homepage from every sub-page). */
+.footer-brand-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+.footer-brand-link:hover { opacity: 0.75; }
 .footer-col p { font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
 .footer-col ul li { margin-bottom: 10px; }
 .footer-col ul li a {
@@ -564,7 +571,7 @@ ul { list-style: none; }
 }
 .testimonial-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 
-.stars { color: var(--color-accent); font-size: 18px; letter-spacing: 2px; margin-bottom: 14px; }
+/* Item 3: .stars rule removed — per-testimonial star displays were a fake-rating surface. */
 
 .testimonial-quote {
   font-size: 16px;
@@ -874,6 +881,7 @@ ul { list-style: none; }
         <li><a href="/reviews/">Reviews</a></li>
         <li><a href="/faq/">FAQ</a></li>
         <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
       <div class="nav-actions">
         <a href="tel:+1 (226) 212-0631" class="nav-phone" aria-label="Call us">
@@ -898,6 +906,7 @@ ul { list-style: none; }
     <a href="/reviews/" onclick="closeMenu()">Reviews</a>
     <a href="/faq/" onclick="closeMenu()">FAQ</a>
     <a href="/blog/" onclick="closeMenu()">Blog</a>
+    <a href="/contact/" onclick="closeMenu()">Contact</a>
     <a href="tel:+1 (226) 212-0631" onclick="closeMenu()" style="display:flex;align-items:center;gap:8px;">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
       +1 (226) 212-0631
@@ -937,7 +946,7 @@ ul { list-style: none; }
         <article class="post-body">
 
           <!-- Intro paragraph -->
-          <p class="post-intro">Choosing artificial turf isn't as simple as picking the greenest-looking option in a showroom. The right product depends on how your yard will be used, what your drainage is like, and how Windsor's climate will affect the turf over time. Get this choice right and you'll have a lawn you love for 15–20 years. Get it wrong and you'll be looking at premature wear, poor drainage, or a surface that gets uncomfortably hot in July. Here's what to look for.</p>
+          <p class="post-intro">Choosing artificial turf isn't as simple as picking the greenest-looking option in a showroom. The right product depends on how your yard will be used, what your drainage is like, and how Windsor's climate will affect the turf over time. Get this choice right and you'll have a lawn you love for 15–20 years. Get it wrong and you'll be looking at premature wear, poor drainage, or a surface that gets uncomfortably hot in July. If you're new to <a href="/">artificial grass Windsor Ontario</a> options, here's what to look for.</p>
 
           <!-- Inline CTA (injected for cost/comparison posts only) -->
           
@@ -1040,7 +1049,7 @@ ul { list-style: none; }
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h4>Windsor Turf Pros</h4>
+          <h4><a href="/" class="footer-brand-link">Windsor Turf Pros</a></h4>
           <p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p>
           <address class="footer-nap" style="font-style:normal;">
             <span>Windsor, Ontario</span><br>
@@ -1064,7 +1073,8 @@ ul { list-style: none; }
             <li><a href="/reviews/">Reviews</a></li>
             <li><a href="/faq/">FAQ</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
           </ul>
         </div>
         <div class="footer-col">

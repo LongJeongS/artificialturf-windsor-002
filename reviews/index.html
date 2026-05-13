@@ -444,6 +444,13 @@ ul { list-style: none; }
   color: var(--white);
   margin-bottom: 18px;
 }
+/* Item 1: Footer brand link (company name links to homepage from every sub-page). */
+.footer-brand-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+.footer-brand-link:hover { opacity: 0.75; }
 .footer-col p { font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
 .footer-col ul li { margin-bottom: 10px; }
 .footer-col ul li a {
@@ -526,7 +533,7 @@ ul { list-style: none; }
 }
 .testimonial-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 
-.stars { color: var(--color-accent); font-size: 18px; letter-spacing: 2px; margin-bottom: 14px; }
+/* Item 3: .stars rule removed — per-testimonial star displays were a fake-rating surface. */
 
 .testimonial-quote {
   font-size: 16px;
@@ -798,6 +805,7 @@ ul { list-style: none; }
         <li><a href="/reviews/" aria-current="page">Reviews</a></li>
         <li><a href="/faq/">FAQ</a></li>
         <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
       <div class="nav-actions">
         <a href="tel:+1 (226) 212-0631" class="nav-phone" aria-label="Call us"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (226) 212-0631</a>
@@ -817,6 +825,7 @@ ul { list-style: none; }
     <a href="/reviews/" onclick="closeMenu()">Reviews</a>
     <a href="/faq/" onclick="closeMenu()">FAQ</a>
     <a href="/blog/" onclick="closeMenu()">Blog</a>
+    <a href="/contact/" onclick="closeMenu()">Contact</a>
     <a href="tel:+1 (226) 212-0631" onclick="closeMenu()" style="display:flex;align-items:center;gap:8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (226) 212-0631</a>
     <a href="/contact/" class="btn btn-primary mobile-cta" onclick="closeMenu()">Get a Free Estimate</a>
   </nav>
@@ -829,10 +838,8 @@ ul { list-style: none; }
     <div class="container">
       <span class="section-eyebrow">Customer Reviews</span>
       <h1>What Windsor Homeowners Say About Us</h1>
-      <div class="reviews-rating-summary">
-        <span class="reviews-stars">★★★★★</span>
-        <span class="reviews-rating-text">5-Star Rated · Windsor & Essex County</span>
-      </div>
+      <!-- Item 3: 5-Star Rated header badge removed (fake-rating compliance). -->
+      <p class="reviews-rating-text">Real reviews from Windsor homeowners and businesses.</p>
     </div>
   </section>
 
@@ -842,7 +849,6 @@ ul { list-style: none; }
       <div class="reviews-grid">
 
         <article class="review-card">
-          <div class="review-card-stars">★★★★★</div>
           <blockquote class="review-card-quote">"Windsor Turf Pros did our backyard in one day and left the place spotless. The turf looks so good that three neighbours have already asked for their number. Absolutely worth every penny."</blockquote>
           <div class="review-card-meta">
             <div class="review-card-avatar" aria-hidden="true">C</div>
@@ -854,7 +860,6 @@ ul { list-style: none; }
         </article>
 
         <article class="review-card">
-          <div class="review-card-stars">★★★★★</div>
           <blockquote class="review-card-quote">"The team walked me through everything before the job started — no surprises, no hidden costs. The front lawn has never looked better and I don't have to touch a mower again."</blockquote>
           <div class="review-card-meta">
             <div class="review-card-avatar" aria-hidden="true">A</div>
@@ -866,7 +871,6 @@ ul { list-style: none; }
         </article>
 
         <article class="review-card">
-          <div class="review-card-stars">★★★★★</div>
           <blockquote class="review-card-quote">"We have two golden retrievers and the old lawn was a mud disaster every spring. The pet turf has been a game changer — easy to rinse, no smell, and the dogs love it."</blockquote>
           <div class="review-card-meta">
             <div class="review-card-avatar" aria-hidden="true">M</div>
@@ -878,7 +882,6 @@ ul { list-style: none; }
         </article>
 
         <article class="review-card">
-          <div class="review-card-stars">★★★★★</div>
           <blockquote class="review-card-quote">"Had them install turf on our rooftop patio. The quality is outstanding and it completely transformed the space. The crew knew exactly what product would hold up through a Windsor winter."</blockquote>
           <div class="review-card-meta">
             <div class="review-card-avatar" aria-hidden="true">S</div>
@@ -890,7 +893,6 @@ ul { list-style: none; }
         </article>
 
         <article class="review-card">
-          <div class="review-card-stars">★★★★★</div>
           <blockquote class="review-card-quote">"The quote was fair, the crew was on time, and the job was done in a single afternoon. No mess, no drama. Exactly what you want from a contractor."</blockquote>
           <div class="review-card-meta">
             <div class="review-card-avatar" aria-hidden="true">P</div>
@@ -902,7 +904,6 @@ ul { list-style: none; }
         </article>
 
         <article class="review-card">
-          <div class="review-card-stars">★★★★★</div>
           <blockquote class="review-card-quote">"I was nervous about the investment but the warranty gave me confidence. Two years later it still looks brand new. I wish I'd done it sooner — watering bills are way down."</blockquote>
           <div class="review-card-meta">
             <div class="review-card-avatar" aria-hidden="true">Y</div>
@@ -914,7 +915,6 @@ ul { list-style: none; }
         </article>
 
         <article class="review-card">
-          <div class="review-card-stars">★★★★★</div>
           <blockquote class="review-card-quote">"Windsor Turf Pros beat two other quotes and delivered better quality. The team actually showed up on time, supervised every step, and didn't just drop off a crew and disappear."</blockquote>
           <div class="review-card-meta">
             <div class="review-card-avatar" aria-hidden="true">T</div>
@@ -926,7 +926,6 @@ ul { list-style: none; }
         </article>
 
         <article class="review-card">
-          <div class="review-card-stars">★★★★★</div>
           <blockquote class="review-card-quote">"The team was patient with all my questions before I committed. The whole process was smooth and professional. Our backyard finally looks the way we always wanted it to."</blockquote>
           <div class="review-card-meta">
             <div class="review-card-avatar" aria-hidden="true">F</div>
@@ -955,9 +954,9 @@ ul { list-style: none; }
 
 <footer id="site-footer" role="contentinfo">
   <div class="footer-top"><div class="container"><div class="footer-grid">
-    <div class="footer-col"><h4>Windsor Turf Pros</h4><p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p><address class="footer-nap" style="font-style:normal;"><span>Windsor, Ontario</span><br><a href="tel:+1 (226) 212-0631" style="color:rgba(255,255,255,0.65);">+1 (226) 212-0631</a></address></div>
+    <div class="footer-col"><h4><a href="/" class="footer-brand-link">Windsor Turf Pros</a></h4><p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p><address class="footer-nap" style="font-style:normal;"><span>Windsor, Ontario</span><br><a href="tel:+1 (226) 212-0631" style="color:rgba(255,255,255,0.65);">+1 (226) 212-0631</a></address></div>
     <div class="footer-col"><h4>Services</h4><ul><li><a href="/services/backyard-turf/">Backyard Turf</a></li><li><a href="/services/playground-turf/">Playground Turf</a></li><li><a href="/services/putting-greens/">Putting Greens</a></li><li><a href="/services/swimming-pool-turf/">Swimming Pool Turf</a></li></ul></div>
-    <div class="footer-col"><h4>Enquiry</h4><ul><li><a href="/contact/">Request Quote</a></li><li><a href="/about/">About Us</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/privacy">Privacy Policy</a></li></ul></div>
+    <div class="footer-col"><h4>Enquiry</h4><ul><li><a href="/contact/">Request Quote</a></li><li><a href="/about/">About Us</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Service</a></li></ul></div>
     <div class="footer-col"><h4>Serving Essex County</h4><ul><li><a href="/">Windsor</a></li><li><a href="/areas/lasalle/">LaSalle</a></li><li><a href="/areas/tecumseh/">Tecumseh</a></li><li><a href="/areas/amherstburg/">Amherstburg</a></li><li><a href="/areas/lakeshore/">Lakeshore</a></li><li><a href="/areas/essex/">Essex</a></li></ul></div>
   </div></div></div>
   <div class="container"><div class="footer-bottom"><span>© 2026 Windsor Turf Pros. Licensed &amp; Insured.</span><span>Windsor, Ontario, Canada</span></div></div>

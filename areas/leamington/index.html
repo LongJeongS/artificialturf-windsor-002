@@ -8,11 +8,11 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- area_page_meta_title is set per-area by stage4 -->
-  <title>Artificial Turf Leamington Ontario | Windsor Turf Pros</title>
+  <title>Artificial Turf Leamington Ontario | Windsor Turf Pros · {{CALLRAIL_NUMBER}}</title>
   <meta name="description" content="Artificial turf installation in Leamington Ontario. Windsor Turf Pros — free estimates, workmanship warranty. Serving Leamington and all of Essex County.">
   <link rel="canonical" href="https://artificialturfwindsor.ca/areas/leamington/">
   <!-- Open Graph -->
-  <meta property="og:title" content="Artificial Turf Leamington Ontario | Windsor Turf Pros">
+  <meta property="og:title" content="Artificial Turf Leamington Ontario | Windsor Turf Pros · {{CALLRAIL_NUMBER}}">
   <meta property="og:description" content="Artificial turf installation in Leamington Ontario. Windsor Turf Pros — free estimates, workmanship warranty. Serving Leamington and all of Essex County.">
   <meta property="og:url" content="https://artificialturfwindsor.ca/areas/leamington/">
   <meta property="og:image" content="/images/hero_bg.webp">
@@ -27,6 +27,30 @@
       { "@type": "ListItem", "position": 2, "name": "Leamington", "item": "https://artificialturfwindsor.ca/areas/leamington/" }
     ]
   }
+  </script>
+  <!-- Item 7: Place schema for this service area (geo + postal + containedInPlace) -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Leamington",
+  "containedInPlace": {
+    "@type": "City",
+    "name": "Windsor"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "42.0531",
+    "longitude": "-82.5994"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Leamington",
+    "addressRegion": "ON",
+    "postalCode": "N8H",
+    "addressCountry": "CA"
+  }
+}
   </script>
   <style>
     /* ═══════════════════════════════════════════════════════════════
@@ -457,6 +481,13 @@ ul { list-style: none; }
   color: var(--white);
   margin-bottom: 18px;
 }
+/* Item 1: Footer brand link (company name links to homepage from every sub-page). */
+.footer-brand-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+.footer-brand-link:hover { opacity: 0.75; }
 .footer-col p { font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
 .footer-col ul li { margin-bottom: 10px; }
 .footer-col ul li a {
@@ -539,7 +570,7 @@ ul { list-style: none; }
 }
 .testimonial-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 
-.stars { color: var(--color-accent); font-size: 18px; letter-spacing: 2px; margin-bottom: 14px; }
+/* Item 3: .stars rule removed — per-testimonial star displays were a fake-rating surface. */
 
 .testimonial-quote {
   font-size: 16px;
@@ -757,7 +788,7 @@ ul { list-style: none; }
     .area-testimonials { padding: 72px 0; background: var(--color-bg); }
     .area-testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 36px; }
     .area-testimonial-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow-sm); }
-    .area-testimonial-stars { color: var(--color-accent); font-size: 16px; margin-bottom: 10px; }
+    /* Item 3: .area-testimonial-stars removed — fake-rating compliance. */
     .area-testimonial-quote { font-size: 15px; line-height: 1.7; font-style: italic; color: var(--text-mid); margin-bottom: 16px; }
     .area-testimonial-meta { font-size: 14px; font-weight: 700; color: var(--color-text); }
     .area-testimonial-location { font-size: 13px; color: var(--text-light); }
@@ -833,6 +864,7 @@ ul { list-style: none; }
         <li><a href="/reviews/">Reviews</a></li>
         <li><a href="/faq/">FAQ</a></li>
         <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
       <div class="nav-actions">
         <a href="tel:+1 (226) 212-0631" class="nav-phone" aria-label="Call us"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (226) 212-0631</a>
@@ -852,6 +884,7 @@ ul { list-style: none; }
     <a href="/reviews/" onclick="closeMenu()">Reviews</a>
     <a href="/faq/" onclick="closeMenu()">FAQ</a>
     <a href="/blog/" onclick="closeMenu()">Blog</a>
+    <a href="/contact/" onclick="closeMenu()">Contact</a>
     <a href="tel:+1 (226) 212-0631" onclick="closeMenu()" style="display:flex;align-items:center;gap:8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (226) 212-0631</a>
     <a href="/contact/" class="btn btn-primary mobile-cta" onclick="closeMenu()">Get a Free Estimate</a>
   </nav>
@@ -938,13 +971,11 @@ ul { list-style: none; }
       <h2 id="area-testimonials-heading" class="section-title">What Leamington Customers Say</h2>
       <div class="area-testimonials-grid">
         <div class="area-testimonial-card">
-          <div class="area-testimonial-stars">★★★★★</div>
           <blockquote class="area-testimonial-quote">"Windsor Turf Pros beat two other quotes and delivered better quality. The team actually showed up on time, supervised every step, and didn't just drop off a crew and disappear."</blockquote>
           <div class="area-testimonial-meta">Tyler W.</div>
           <div class="area-testimonial-location">Fontainebleau</div>
         </div>
         <div class="area-testimonial-card">
-          <div class="area-testimonial-stars">★★★★★</div>
           <blockquote class="area-testimonial-quote">"The team was patient with all my questions before I committed. The whole process was smooth and professional. Our backyard finally looks the way we always wanted it to."</blockquote>
           <div class="area-testimonial-meta">Fatima A.</div>
           <div class="area-testimonial-location">Pillette Village</div>
@@ -1012,6 +1043,15 @@ ul { list-style: none; }
     </div>
   </section>
 
+  <!-- ── Item 6: About {Area} — location-context blurb near the bottom ───── -->
+  <section class="area-about-location section-pad" aria-labelledby="about-location-heading">
+    <div class="container" style="max-width:760px;">
+      <span class="section-eyebrow">About the Area</span>
+      <h2 id="about-location-heading" class="section-title">About Leamington</h2>
+      <p class="area-location-blurb" style="font-size:16px;line-height:1.8;color:var(--text-mid);">Leamington occupies the southernmost mainland tip of Canada, with Point Pelee National Park projecting into Lake Erie just south of the town and the Seacliff and marina districts running along the shoreline. The town has a distinct identity within Essex County: it's the agricultural and greenhouse capital of the region, anchored by decades of tomato heritage that traces back to the Heinz cannery era, and it experiences the longest, warmest growing season of anywhere in mainland Ontario. Climate is the dominant factor in how natural lawns perform here — summer heat is more intense and more prolonged than anywhere else in the county, and the soils range from clay near the lakeshore to sandier mixes in the agricultural belt north of the town. Watering restrictions are an annual reality through the worst of July and August, and the heat-stressed lawns of mid-summer push a lot of homeowners toward artificial turf conversions in the spring window before peak-season demand. The pattern of installs in Leamington skews toward larger residential lots in the Wheatley-adjacent area, plus pool surrounds and lake-adjacent installs near Seacliff. Lake-effect dampness in the shoulder seasons is mild compared to Lake St. Clair-adjacent communities.</p>
+    </div>
+  </section>
+
   <!-- ── CTA Band ───────────────────────────────────────────────────────── -->
   <section id="cta-band" aria-labelledby="cta-heading">
     <div class="container">
@@ -1023,24 +1063,31 @@ ul { list-style: none; }
 
 </main>
 
+<!-- Item 7: LocalBusiness reference-only block (@id refers to home page's full definition) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Windsor Turf Pros",
-  "url": "https://artificialturfwindsor.ca",
-  "telephone": "+1 (226) 212-0631",
-  "areaServed": {"@type": "City", "name": "Leamington"},
-  "address": {"@type": "PostalAddress", "streetAddress": "Windsor, Ontario", "addressLocality": "Windsor", "addressRegion": "Ontario", "postalCode": "N9A 4J8", "addressCountry": "CA"},
-  "geo": {"@type": "GeoCoordinates", "latitude": "42.3149", "longitude": "-83.0364"}
+  "@id": "https://artificialturfwindsor.ca#organization",
+  "areaServed": {
+    "@type": "City",
+    "name": "Leamington",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Leamington",
+      "addressRegion": "ON",
+      "postalCode": "N8H",
+      "addressCountry": "CA"
+    }
+  }
 }
 </script>
 
 <footer id="site-footer" role="contentinfo">
   <div class="footer-top"><div class="container"><div class="footer-grid">
-    <div class="footer-col"><h4>Windsor Turf Pros</h4><p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p><address class="footer-nap" style="font-style:normal;"><span>Windsor, Ontario</span><br><a href="tel:+1 (226) 212-0631" style="color:rgba(255,255,255,0.65);">+1 (226) 212-0631</a></address></div>
+    <div class="footer-col"><h4><a href="/" class="footer-brand-link">Windsor Turf Pros</a></h4><p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p><address class="footer-nap" style="font-style:normal;"><span>Windsor, Ontario</span><br><a href="tel:+1 (226) 212-0631" style="color:rgba(255,255,255,0.65);">+1 (226) 212-0631</a></address></div>
     <div class="footer-col"><h4>Services</h4><ul><li><a href="/services/backyard-turf/">Backyard Turf</a></li><li><a href="/services/playground-turf/">Playground Turf</a></li><li><a href="/services/putting-greens/">Putting Greens</a></li><li><a href="/services/swimming-pool-turf/">Swimming Pool Turf</a></li></ul></div>
-    <div class="footer-col"><h4>Enquiry</h4><ul><li><a href="/contact/">Request Quote</a></li><li><a href="/about/">About Us</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/privacy">Privacy Policy</a></li></ul></div>
+    <div class="footer-col"><h4>Enquiry</h4><ul><li><a href="/contact/">Request Quote</a></li><li><a href="/about/">About Us</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Service</a></li></ul></div>
     <div class="footer-col"><h4>Serving Essex County</h4><ul><li><a href="/">Windsor</a></li><li><a href="/areas/lasalle/">LaSalle</a></li><li><a href="/areas/tecumseh/">Tecumseh</a></li><li><a href="/areas/amherstburg/">Amherstburg</a></li><li><a href="/areas/lakeshore/">Lakeshore</a></li><li><a href="/areas/essex/">Essex</a></li></ul></div>
   </div></div></div>
   <div class="container"><div class="footer-bottom"><span>© 2026 Windsor Turf Pros. Licensed &amp; Insured.</span><span>Windsor, Ontario, Canada</span></div></div>

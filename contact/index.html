@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Windsor Turf Pros</title>
+  <title>Contact Us | Windsor Turf Pros · +1 (226) 212-0631</title>
   <meta name="description" content="Windsor's trusted artificial turf installers. Licensed, insured, workmanship warranty on every job. Free same-week estimates — serving Windsor and Essex County.">
   <link rel="canonical" href="https://artificialturfwindsor.cacontact/">
   <meta property="og:title" content="Contact Us | Windsor Turf Pros">
@@ -444,6 +444,13 @@ ul { list-style: none; }
   color: var(--white);
   margin-bottom: 18px;
 }
+/* Item 1: Footer brand link (company name links to homepage from every sub-page). */
+.footer-brand-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+.footer-brand-link:hover { opacity: 0.75; }
 .footer-col p { font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
 .footer-col ul li { margin-bottom: 10px; }
 .footer-col ul li a {
@@ -526,7 +533,7 @@ ul { list-style: none; }
 }
 .testimonial-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 
-.stars { color: var(--color-accent); font-size: 18px; letter-spacing: 2px; margin-bottom: 14px; }
+/* Item 3: .stars rule removed — per-testimonial star displays were a fake-rating surface. */
 
 .testimonial-quote {
   font-size: 16px;
@@ -816,6 +823,7 @@ ul { list-style: none; }
         <li><a href="/reviews/">Reviews</a></li>
         <li><a href="/faq/">FAQ</a></li>
         <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/" aria-current="page">Contact</a></li>
       </ul>
       <div class="nav-actions">
         <a href="tel:+1 (226) 212-0631" class="nav-phone" aria-label="Call us"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (226) 212-0631</a>
@@ -835,6 +843,7 @@ ul { list-style: none; }
     <a href="/reviews/" onclick="closeMenu()">Reviews</a>
     <a href="/faq/" onclick="closeMenu()">FAQ</a>
     <a href="/blog/" onclick="closeMenu()">Blog</a>
+    <a href="/contact/" onclick="closeMenu()" aria-current="page">Contact</a>
     <a href="tel:+1 (226) 212-0631" onclick="closeMenu()" style="display:flex;align-items:center;gap:8px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (226) 212-0631</a>
     <a href="/contact/" class="btn btn-primary mobile-cta" onclick="closeMenu()">Get a Free Estimate</a>
   </nav>
@@ -865,7 +874,7 @@ ul { list-style: none; }
         <!-- Left: Contact form -->
         <div class="contact-form-wrap">
           <h2>Request a Free Estimate</h2>
-          <form class="contact-form" name="contact" method="POST" action="https://leads-proxy.jeongpark95.workers.dev" data-leads-form>
+          <form class="contact-form" name="contact" method="POST" action="#" data-leads-form>
             <input type="hidden" name="run_id" value="artificialturf-windsor-002">
             <div class="form-row">
               <div class="form-group">
@@ -978,9 +987,9 @@ ul { list-style: none; }
 
 <footer id="site-footer" role="contentinfo">
   <div class="footer-top"><div class="container"><div class="footer-grid">
-    <div class="footer-col"><h4>Windsor Turf Pros</h4><p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p><address class="footer-nap" style="font-style:normal;"><span>Windsor, Ontario</span><br><a href="tel:+1 (226) 212-0631" style="color:rgba(255,255,255,0.65);">+1 (226) 212-0631</a></address></div>
+    <div class="footer-col"><h4><a href="/" class="footer-brand-link">Windsor Turf Pros</a></h4><p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p><address class="footer-nap" style="font-style:normal;"><span>Windsor, Ontario</span><br><a href="tel:+1 (226) 212-0631" style="color:rgba(255,255,255,0.65);">+1 (226) 212-0631</a></address></div>
     <div class="footer-col"><h4>Services</h4><ul><li><a href="/services/backyard-turf/">Backyard Turf</a></li><li><a href="/services/playground-turf/">Playground Turf</a></li><li><a href="/services/putting-greens/">Putting Greens</a></li><li><a href="/services/swimming-pool-turf/">Swimming Pool Turf</a></li></ul></div>
-    <div class="footer-col"><h4>Enquiry</h4><ul><li><a href="/contact/">Request Quote</a></li><li><a href="/about/">About Us</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/privacy">Privacy Policy</a></li></ul></div>
+    <div class="footer-col"><h4>Enquiry</h4><ul><li><a href="/contact/">Request Quote</a></li><li><a href="/about/">About Us</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Service</a></li></ul></div>
     <div class="footer-col"><h4>Serving Essex County</h4><ul><li><a href="/">Windsor</a></li><li><a href="/areas/lasalle/">LaSalle</a></li><li><a href="/areas/tecumseh/">Tecumseh</a></li><li><a href="/areas/amherstburg/">Amherstburg</a></li><li><a href="/areas/lakeshore/">Lakeshore</a></li><li><a href="/areas/essex/">Essex</a></li></ul></div>
   </div></div></div>
   <div class="container"><div class="footer-bottom"><span>© 2026 Windsor Turf Pros. Licensed &amp; Insured.</span><span>Windsor, Ontario, Canada</span></div></div>
