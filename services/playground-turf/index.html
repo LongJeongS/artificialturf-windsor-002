@@ -775,10 +775,16 @@ ul { list-style: none; }
     .svc-hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
     /* Item 5: Local intro section (between hero and benefits) */
-    .svc-local-intro { padding: 64px 0 0; }
-    .svc-local-intro .container { max-width: 800px; }
-    .svc-local-intro h2 { font-size: clamp(24px, 3.5vw, 32px); margin-bottom: 16px; }
-    .svc-local-intro-body { font-size: 17px; line-height: 1.75; color: var(--text-mid); }
+    .svc-local-intro { padding: 72px 0 8px; }
+    .svc-local-intro .container { max-width: 720px; }
+    .svc-local-intro .section-eyebrow { display: block; margin-bottom: 12px; }
+    .svc-local-intro h2 { font-size: clamp(26px, 3.5vw, 34px); line-height: 1.2; margin: 0 0 24px; max-width: 22ch; }
+    .svc-local-intro-body { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
+    .svc-local-intro-body + .svc-local-intro-body { margin-top: 18px; }
+    @media (min-width: 768px) {
+      .svc-local-intro { padding: 96px 0 16px; }
+      .svc-local-intro-body + .svc-local-intro-body { margin-top: 22px; }
+    }
 
     /* Item 5: Materials & Specifications grid */
     .svc-specs { padding: 72px 0; }
@@ -950,8 +956,11 @@ ul { list-style: none; }
   <!-- ── Item 5: Local Intro ─────────────────────────────────────────── -->
   <section class="svc-local-intro" aria-labelledby="local-intro-heading">
     <div class="container">
+      <span class="section-eyebrow">Built for Windsor</span>
       <h2 id="local-intro-heading">Playground Turf for Windsor Backyards and Childcare Spaces</h2>
-      <p class="svc-local-intro-body">Playground turf gets a different spec than a standard residential lawn — and in Windsor that distinction matters more than most homeowners realize. The combination of clay-heavy soil, freeze-thaw cycling, and the constant high-impact use of a play zone means the sub-base and the cushioning infill carry as much weight as the turf itself. We design playground installs around the equipment you already have or are planning to add, with deeper infill, impact-attenuating pads under the highest fall zones, and drainage that handles Windsor's spring melt without pooling under the surface.</p>
+      <p class="svc-local-intro-body">Playground turf is a different product than a standard residential lawn — and that distinction matters more in Windsor than most homeowners realize.</p>
+<p class="svc-local-intro-body">The mix of clay-heavy soil, freeze-thaw cycling, and the daily impact of an active play zone means the sub-base and the cushioning infill carry as much weight as the turf itself. Get either one wrong and the surface heaves, compacts, or wears out in a couple of seasons.</p>
+<p class="svc-local-intro-body">We design playground installs around the equipment you already have or plan to add. Deeper infill, impact pads under the high-fall zones, and drainage routed to handle Windsor's spring melt without pooling under the surface.</p>
     </div>
   </section>
 

@@ -814,6 +814,18 @@ ul { list-style: none; }
     .faq-answer-inner { padding: 0 24px 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; }
     .faq-item.open .faq-answer { max-height: 2000px; }
 
+    /* ── About-the-area prose section (Item 6) ───────────────────────── */
+    .area-about-location { padding: 72px 0; }
+    .area-about-location .container { max-width: 720px; }
+    .area-about-location .section-eyebrow { display: block; margin-bottom: 12px; }
+    .area-about-location .section-title { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; margin: 0 0 24px; }
+    .area-location-blurb { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
+    .area-location-blurb + .area-location-blurb { margin-top: 18px; }
+    @media (min-width: 768px) {
+      .area-about-location { padding: 96px 0; }
+      .area-location-blurb + .area-location-blurb { margin-top: 22px; }
+    }
+
     @media(max-width:992px){ .area-intro-grid{grid-template-columns:1fr;} .area-services-grid{grid-template-columns:1fr 1fr;} }
     @media(max-width:768px){ .area-services-grid{grid-template-columns:1fr;} .area-testimonials-grid{grid-template-columns:1fr;} }
   </style>
@@ -1044,11 +1056,14 @@ ul { list-style: none; }
   </section>
 
   <!-- ── Item 6: About {Area} — location-context blurb near the bottom ───── -->
-  <section class="area-about-location section-pad" aria-labelledby="about-location-heading">
-    <div class="container" style="max-width:760px;">
+  <section class="area-about-location" aria-labelledby="about-location-heading">
+    <div class="container">
       <span class="section-eyebrow">About the Area</span>
       <h2 id="about-location-heading" class="section-title">About Essex</h2>
-      <p class="area-location-blurb" style="font-size:16px;line-height:1.8;color:var(--text-mid);">The Town of Essex sits inland in the heart of Essex County, away from both the Detroit River and the Lake Erie shoreline, which gives it a distinctly different climate signature than the lakeside communities. Without the moderating influence of open water, Essex experiences more pronounced freeze-thaw cycles in winter and more drying summer wind in July and August. The town centre around Essex Centre and the surrounding rural belt that runs out toward Colchester and McGregor is characterised by larger residential lots — typically a quarter-acre or more — and a mix of older established homes and newer rural subdivisions. The agricultural land around the town shapes a lot of the housing character: properties often have outbuildings, gravel driveways, and the kind of working-yard mix that doesn't pair well with a high-maintenance natural lawn. For turf installs in Essex, the practical pattern is large-area conversions — front and back yards together, sometimes including a side-yard pet zone — rather than the compact pool surrounds or rooftop installs more common in Windsor proper. The clay subsoil here is generally similar to Windsor's, so the base-build spec is conventional; the difference is in the scale of the install and the lot exposure to wind.</p>
+      <p class="area-location-blurb">The Town of Essex sits inland in the heart of Essex County — away from both the Detroit River and the Lake Erie shoreline. That inland position gives it a distinctly different climate signature than the lakeside communities.</p>
+<p class="area-location-blurb">Without the moderating influence of open water, Essex experiences more pronounced freeze-thaw cycles in winter and more drying summer wind in July and August. Lawns here stress harder and recover slower than they would a few kilometres closer to the lake.</p>
+<p class="area-location-blurb">The town centre around Essex Centre and the surrounding rural belt running out toward Colchester and McGregor is characterised by larger residential lots — typically a quarter-acre or more. The agricultural land around the town shapes the housing character: outbuildings, gravel driveways, and the kind of working-yard mix that doesn't pair well with a high-maintenance natural lawn.</p>
+<p class="area-location-blurb">Most installs in Essex are large-area conversions — front and back yards together, sometimes including a side-yard pet zone — rather than the compact pool surrounds or rooftop installs more common in Windsor proper. The clay subsoil is similar to Windsor's, so the base-build spec is conventional. The difference is in the scale and the lot exposure to wind.</p>
     </div>
   </section>
 

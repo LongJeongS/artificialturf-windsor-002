@@ -814,6 +814,18 @@ ul { list-style: none; }
     .faq-answer-inner { padding: 0 24px 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; }
     .faq-item.open .faq-answer { max-height: 2000px; }
 
+    /* ── About-the-area prose section (Item 6) ───────────────────────── */
+    .area-about-location { padding: 72px 0; }
+    .area-about-location .container { max-width: 720px; }
+    .area-about-location .section-eyebrow { display: block; margin-bottom: 12px; }
+    .area-about-location .section-title { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; margin: 0 0 24px; }
+    .area-location-blurb { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
+    .area-location-blurb + .area-location-blurb { margin-top: 18px; }
+    @media (min-width: 768px) {
+      .area-about-location { padding: 96px 0; }
+      .area-location-blurb + .area-location-blurb { margin-top: 22px; }
+    }
+
     @media(max-width:992px){ .area-intro-grid{grid-template-columns:1fr;} .area-services-grid{grid-template-columns:1fr 1fr;} }
     @media(max-width:768px){ .area-services-grid{grid-template-columns:1fr;} .area-testimonials-grid{grid-template-columns:1fr;} }
   </style>
@@ -1044,11 +1056,14 @@ ul { list-style: none; }
   </section>
 
   <!-- ── Item 6: About {Area} — location-context blurb near the bottom ───── -->
-  <section class="area-about-location section-pad" aria-labelledby="about-location-heading">
-    <div class="container" style="max-width:760px;">
+  <section class="area-about-location" aria-labelledby="about-location-heading">
+    <div class="container">
       <span class="section-eyebrow">About the Area</span>
       <h2 id="about-location-heading" class="section-title">About LaSalle</h2>
-      <p class="area-location-blurb" style="font-size:16px;line-height:1.8;color:var(--text-mid);">LaSalle is the suburban municipality immediately southwest of Windsor along the Detroit River, and one of the fastest-growing residential communities in Essex County. The town's character is shaped by larger residential lots, mature tree cover in areas like Heritage Estates and Olde Town LaSalle, and the riverfront promenade that runs along Front Road through Gil Maure Park toward the Vollmer Centre. Homeowners here are typically working with more outdoor space than they would in central Windsor, which changes the economics of artificial turf — the labour savings scale faster on a half-acre lot than on a compact downtown property. Climate-wise, LaSalle sits inside the same Detroit River micro-corridor as Windsor: clay-heavy soil that needs a proper compacted sub-base to handle freeze-thaw cycling, hot humid summers that stress natural grass during watering restrictions, and the same November-through-April dormancy window. Many of the new builds in LaSalle's recent subdivisions come with developer-installed sod that struggles to establish in the area's clay subsoil, and a turf conversion solves the recurring patch-and-reseed cycle in one project. We typically run two to three estimates a week across LaSalle through spring and early summer.</p>
+      <p class="area-location-blurb">LaSalle is the suburban municipality immediately southwest of Windsor along the Detroit River, and one of the fastest-growing residential communities in Essex County. The town's character is shaped by larger residential lots, mature tree cover in areas like Heritage Estates and Olde Town LaSalle, and the riverfront promenade that runs along Front Road through Gil Maure Park toward the Vollmer Centre.</p>
+<p class="area-location-blurb">Homeowners in LaSalle are typically working with more outdoor space than they would in central Windsor. That changes the economics of artificial turf — the labour savings scale faster on a half-acre lot than on a compact downtown property.</p>
+<p class="area-location-blurb">LaSalle sits inside the same Detroit River micro-corridor as Windsor. Clay-heavy soil that needs a properly compacted sub-base to handle freeze-thaw cycling. Hot humid summers that stress natural grass during watering restrictions. The same November-through-April dormancy window that turns lawns brown for half the year.</p>
+<p class="area-location-blurb">Many of the new builds in LaSalle's recent subdivisions come with developer-installed sod that struggles to establish in the area's clay subsoil. A turf conversion solves the recurring patch-and-reseed cycle in one project. We typically run two to three estimates a week across LaSalle through spring and early summer.</p>
     </div>
   </section>
 

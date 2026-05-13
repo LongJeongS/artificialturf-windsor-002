@@ -814,6 +814,18 @@ ul { list-style: none; }
     .faq-answer-inner { padding: 0 24px 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; }
     .faq-item.open .faq-answer { max-height: 2000px; }
 
+    /* ── About-the-area prose section (Item 6) ───────────────────────── */
+    .area-about-location { padding: 72px 0; }
+    .area-about-location .container { max-width: 720px; }
+    .area-about-location .section-eyebrow { display: block; margin-bottom: 12px; }
+    .area-about-location .section-title { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; margin: 0 0 24px; }
+    .area-location-blurb { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
+    .area-location-blurb + .area-location-blurb { margin-top: 18px; }
+    @media (min-width: 768px) {
+      .area-about-location { padding: 96px 0; }
+      .area-location-blurb + .area-location-blurb { margin-top: 22px; }
+    }
+
     @media(max-width:992px){ .area-intro-grid{grid-template-columns:1fr;} .area-services-grid{grid-template-columns:1fr 1fr;} }
     @media(max-width:768px){ .area-services-grid{grid-template-columns:1fr;} .area-testimonials-grid{grid-template-columns:1fr;} }
   </style>
@@ -1044,11 +1056,14 @@ ul { list-style: none; }
   </section>
 
   <!-- ── Item 6: About {Area} — location-context blurb near the bottom ───── -->
-  <section class="area-about-location section-pad" aria-labelledby="about-location-heading">
-    <div class="container" style="max-width:760px;">
+  <section class="area-about-location" aria-labelledby="about-location-heading">
+    <div class="container">
       <span class="section-eyebrow">About the Area</span>
       <h2 id="about-location-heading" class="section-title">About Leamington</h2>
-      <p class="area-location-blurb" style="font-size:16px;line-height:1.8;color:var(--text-mid);">Leamington occupies the southernmost mainland tip of Canada, with Point Pelee National Park projecting into Lake Erie just south of the town and the Seacliff and marina districts running along the shoreline. The town has a distinct identity within Essex County: it's the agricultural and greenhouse capital of the region, anchored by decades of tomato heritage that traces back to the Heinz cannery era, and it experiences the longest, warmest growing season of anywhere in mainland Ontario. Climate is the dominant factor in how natural lawns perform here — summer heat is more intense and more prolonged than anywhere else in the county, and the soils range from clay near the lakeshore to sandier mixes in the agricultural belt north of the town. Watering restrictions are an annual reality through the worst of July and August, and the heat-stressed lawns of mid-summer push a lot of homeowners toward artificial turf conversions in the spring window before peak-season demand. The pattern of installs in Leamington skews toward larger residential lots in the Wheatley-adjacent area, plus pool surrounds and lake-adjacent installs near Seacliff. Lake-effect dampness in the shoulder seasons is mild compared to Lake St. Clair-adjacent communities.</p>
+      <p class="area-location-blurb">Leamington occupies the southernmost mainland tip of Canada. Point Pelee National Park projects into Lake Erie just south of the town, and the Seacliff and marina districts run along the shoreline.</p>
+<p class="area-location-blurb">The town has a distinct identity within Essex County. It's the agricultural and greenhouse capital of the region, anchored by decades of tomato heritage that traces back to the Heinz cannery era. It also experiences the longest, warmest growing season of anywhere in mainland Ontario.</p>
+<p class="area-location-blurb">Climate is the dominant factor in how natural lawns perform here. Summer heat is more intense and more prolonged than anywhere else in the county. Soils range from clay near the lakeshore to sandier mixes in the agricultural belt north of the town. Watering restrictions are an annual reality through the worst of July and August.</p>
+<p class="area-location-blurb">The heat-stressed lawns of mid-summer push a lot of homeowners toward turf conversions in the spring window before peak-season demand. Installs in Leamington skew toward larger residential lots in the Wheatley-adjacent area, plus pool surrounds and lake-adjacent installs near Seacliff. Lake-effect dampness in the shoulder seasons is mild compared to Lake St. Clair-adjacent communities.</p>
     </div>
   </section>
 

@@ -814,6 +814,18 @@ ul { list-style: none; }
     .faq-answer-inner { padding: 0 24px 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; }
     .faq-item.open .faq-answer { max-height: 2000px; }
 
+    /* ── About-the-area prose section (Item 6) ───────────────────────── */
+    .area-about-location { padding: 72px 0; }
+    .area-about-location .container { max-width: 720px; }
+    .area-about-location .section-eyebrow { display: block; margin-bottom: 12px; }
+    .area-about-location .section-title { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; margin: 0 0 24px; }
+    .area-location-blurb { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
+    .area-location-blurb + .area-location-blurb { margin-top: 18px; }
+    @media (min-width: 768px) {
+      .area-about-location { padding: 96px 0; }
+      .area-location-blurb + .area-location-blurb { margin-top: 22px; }
+    }
+
     @media(max-width:992px){ .area-intro-grid{grid-template-columns:1fr;} .area-services-grid{grid-template-columns:1fr 1fr;} }
     @media(max-width:768px){ .area-services-grid{grid-template-columns:1fr;} .area-testimonials-grid{grid-template-columns:1fr;} }
   </style>
@@ -1044,11 +1056,14 @@ ul { list-style: none; }
   </section>
 
   <!-- ── Item 6: About {Area} — location-context blurb near the bottom ───── -->
-  <section class="area-about-location section-pad" aria-labelledby="about-location-heading">
-    <div class="container" style="max-width:760px;">
+  <section class="area-about-location" aria-labelledby="about-location-heading">
+    <div class="container">
       <span class="section-eyebrow">About the Area</span>
       <h2 id="about-location-heading" class="section-title">About Amherstburg</h2>
-      <p class="area-location-blurb" style="font-size:16px;line-height:1.8;color:var(--text-mid);">Amherstburg occupies the southwestern corner of Essex County, where the Detroit River widens out into Lake Erie. The town's character is split between the historic core around Fort Malden and King's Navy Yard Park — narrow lots, century homes, and a heritage streetscape that follows the river — and the newer residential developments north and east of the centre, where lot sizes open up considerably. Boblo Island (Bois Blanc) sits offshore and forms a visual anchor for the river-facing properties. Climate here carries a marine influence that runs slightly different from inland Essex County: the open water of the river-and-lake junction moderates summer extremes but exposes properties to consistent wind, which dries out natural lawns faster than they can recover during dry stretches. The freeze-thaw pattern is also slightly more pronounced near the water because of the temperature differential. For turf installs in Amherstburg's historic core, lot constraints often mean working in tight side yards or behind heritage facades — the install is more about precise cutting and seam placement than the larger sub-base builds typical of newer developments. The newer subdivisions outside the core handle conventionally, with clay-soil prep and standard drainage routing.</p>
+      <p class="area-location-blurb">Amherstburg occupies the southwestern corner of Essex County, where the Detroit River widens out into Lake Erie. The town's character is split between two distinct zones.</p>
+<p class="area-location-blurb">The historic core around Fort Malden and King's Navy Yard Park is narrow lots, century homes, and a heritage streetscape that follows the river. The newer residential developments north and east of the centre have larger lots and a conventional suburban character. Boblo Island sits offshore and anchors the river-facing properties.</p>
+<p class="area-location-blurb">The marine influence here runs slightly different from inland Essex County. The open water of the river-and-lake junction moderates summer extremes but exposes properties to consistent wind, which dries out natural lawns faster than they can recover during dry stretches. The freeze-thaw pattern is also slightly more pronounced near the water because of the temperature differential.</p>
+<p class="area-location-blurb">Installs in Amherstburg's historic core often mean working in tight side yards or behind heritage facades — the job is more about precise cutting and seam placement than the larger sub-base builds typical of newer developments. The subdivisions outside the core handle conventionally, with clay-soil prep and standard drainage routing.</p>
     </div>
   </section>
 

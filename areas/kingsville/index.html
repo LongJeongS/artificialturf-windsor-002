@@ -814,6 +814,18 @@ ul { list-style: none; }
     .faq-answer-inner { padding: 0 24px 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; }
     .faq-item.open .faq-answer { max-height: 2000px; }
 
+    /* ── About-the-area prose section (Item 6) ───────────────────────── */
+    .area-about-location { padding: 72px 0; }
+    .area-about-location .container { max-width: 720px; }
+    .area-about-location .section-eyebrow { display: block; margin-bottom: 12px; }
+    .area-about-location .section-title { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; margin: 0 0 24px; }
+    .area-location-blurb { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
+    .area-location-blurb + .area-location-blurb { margin-top: 18px; }
+    @media (min-width: 768px) {
+      .area-about-location { padding: 96px 0; }
+      .area-location-blurb + .area-location-blurb { margin-top: 22px; }
+    }
+
     @media(max-width:992px){ .area-intro-grid{grid-template-columns:1fr;} .area-services-grid{grid-template-columns:1fr 1fr;} }
     @media(max-width:768px){ .area-services-grid{grid-template-columns:1fr;} .area-testimonials-grid{grid-template-columns:1fr;} }
   </style>
@@ -1044,11 +1056,14 @@ ul { list-style: none; }
   </section>
 
   <!-- ── Item 6: About {Area} — location-context blurb near the bottom ───── -->
-  <section class="area-about-location section-pad" aria-labelledby="about-location-heading">
-    <div class="container" style="max-width:760px;">
+  <section class="area-about-location" aria-labelledby="about-location-heading">
+    <div class="container">
       <span class="section-eyebrow">About the Area</span>
       <h2 id="about-location-heading" class="section-title">About Kingsville</h2>
-      <p class="area-location-blurb" style="font-size:16px;line-height:1.8;color:var(--text-mid);">Kingsville bills itself as the most southern town in Canada and sits along the northern shore of Lake Erie at the south end of Essex County. The town's character is shaped by three things: the lake, the agricultural belt that runs north of the lakefront, and a longer warm-season window than almost anywhere else in Ontario. Mettawas Park and Lakeside Park anchor the shoreline, and the Jack Miner Bird Sanctuary sits a few minutes inland — both are reference points homeowners commonly use when describing where they live. The town extends north into the Cottam and Ruthven areas, where lots open up considerably and the residential character shifts toward agricultural-adjacent properties. Climate matters more for turf decisions in Kingsville than in most of Essex County because the warmer microclimate means natural lawns are subjected to a longer, hotter watering season — and the lake-effect humidity stresses cool-season grasses that other parts of Ontario manage without much issue. Properties closer to the lakefront also see higher spring water tables and occasional ice damage in the few weeks when Lake Erie's nearshore freezes. Most of our Kingsville installs are full-yard residential conversions, with a meaningful share of pool surrounds in the lakefront neighbourhoods.</p>
+      <p class="area-location-blurb">Kingsville bills itself as the most southern town in Canada and sits along the northern shore of Lake Erie at the south end of Essex County. The town's character is shaped by three things: the lake, the agricultural belt that runs north of the lakefront, and a longer warm-season window than almost anywhere else in Ontario.</p>
+<p class="area-location-blurb">Mettawas Park and Lakeside Park anchor the shoreline, and the Jack Miner Bird Sanctuary sits a few minutes inland — both are reference points homeowners use when describing where they live. The town extends north into the Cottam and Ruthven areas, where lots open up and the character shifts toward agricultural-adjacent properties.</p>
+<p class="area-location-blurb">Climate matters more for turf decisions here than in most of Essex County. The warmer microclimate means natural lawns are subjected to a longer, hotter watering season, and the lake-effect humidity stresses cool-season grasses that other parts of Ontario manage without much issue.</p>
+<p class="area-location-blurb">Properties closer to the lakefront see higher spring water tables and occasional ice damage in the few weeks Lake Erie's nearshore freezes. Most of our Kingsville installs are full-yard residential conversions, with a meaningful share of pool surrounds in the lakefront neighbourhoods.</p>
     </div>
   </section>
 

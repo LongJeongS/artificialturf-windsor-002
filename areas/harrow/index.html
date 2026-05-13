@@ -814,6 +814,18 @@ ul { list-style: none; }
     .faq-answer-inner { padding: 0 24px 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; }
     .faq-item.open .faq-answer { max-height: 2000px; }
 
+    /* ── About-the-area prose section (Item 6) ───────────────────────── */
+    .area-about-location { padding: 72px 0; }
+    .area-about-location .container { max-width: 720px; }
+    .area-about-location .section-eyebrow { display: block; margin-bottom: 12px; }
+    .area-about-location .section-title { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; margin: 0 0 24px; }
+    .area-location-blurb { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
+    .area-location-blurb + .area-location-blurb { margin-top: 18px; }
+    @media (min-width: 768px) {
+      .area-about-location { padding: 96px 0; }
+      .area-location-blurb + .area-location-blurb { margin-top: 22px; }
+    }
+
     @media(max-width:992px){ .area-intro-grid{grid-template-columns:1fr;} .area-services-grid{grid-template-columns:1fr 1fr;} }
     @media(max-width:768px){ .area-services-grid{grid-template-columns:1fr;} .area-testimonials-grid{grid-template-columns:1fr;} }
   </style>
@@ -1044,11 +1056,14 @@ ul { list-style: none; }
   </section>
 
   <!-- ── Item 6: About {Area} — location-context blurb near the bottom ───── -->
-  <section class="area-about-location section-pad" aria-labelledby="about-location-heading">
-    <div class="container" style="max-width:760px;">
+  <section class="area-about-location" aria-labelledby="about-location-heading">
+    <div class="container">
       <span class="section-eyebrow">About the Area</span>
       <h2 id="about-location-heading" class="section-title">About Harrow</h2>
-      <p class="area-location-blurb" style="font-size:16px;line-height:1.8;color:var(--text-mid);">Harrow is a small community in the agricultural belt of southern Essex County, sitting between the inland Town of Essex and the Lake Erie shoreline communities of Colchester and Oxley. The village core is compact and historic — Harrow Junior School and the small commercial strip define the centre — but most of the surrounding properties open up into larger rural lots that blend into the surrounding farmland. The character of Harrow is more rural than any other community in our service area: outbuildings, gravel driveways, and properties measured in acres rather than typical residential lot sizes. Climate-wise, Harrow shares the inland Essex County pattern of pronounced freeze-thaw cycles and dry summer winds, but its proximity to Lake Erie (about ten kilometres south at Colchester Harbour) introduces a mild moderating influence in the shoulder seasons. Soils here are a mix — heavier clay closer to the inland areas, with sandier patches in the agricultural sections north and east of the village. Turf installs in Harrow tend to be larger residential conversions or pet-zone projects on rural properties where natural lawn care competes with farm and shop work for time. We serve Harrow as part of our standard Essex County coverage with no travel surcharge.</p>
+      <p class="area-location-blurb">Harrow is a small community in the agricultural belt of southern Essex County. It sits between the inland Town of Essex and the Lake Erie shoreline communities of Colchester and Oxley.</p>
+<p class="area-location-blurb">The village core is compact and historic — Harrow Junior School and the small commercial strip define the centre. Most of the surrounding properties open up into larger rural lots that blend into the surrounding farmland. The character is more rural than any other community in our service area: outbuildings, gravel driveways, and properties measured in acres rather than typical residential lot sizes.</p>
+<p class="area-location-blurb">Harrow shares the inland Essex County pattern of pronounced freeze-thaw cycles and dry summer winds. Its proximity to Lake Erie — about ten kilometres south at Colchester Harbour — introduces a mild moderating influence in the shoulder seasons. Soils are a mix: heavier clay closer to the inland areas, with sandier patches in the agricultural sections north and east of the village.</p>
+<p class="area-location-blurb">Turf installs in Harrow tend to be larger residential conversions or pet-zone projects on rural properties where natural lawn care competes with farm and shop work for time. We serve Harrow as part of our standard Essex County coverage with no travel surcharge.</p>
     </div>
   </section>
 

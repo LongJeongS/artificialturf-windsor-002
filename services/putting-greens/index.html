@@ -775,10 +775,16 @@ ul { list-style: none; }
     .svc-hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
     /* Item 5: Local intro section (between hero and benefits) */
-    .svc-local-intro { padding: 64px 0 0; }
-    .svc-local-intro .container { max-width: 800px; }
-    .svc-local-intro h2 { font-size: clamp(24px, 3.5vw, 32px); margin-bottom: 16px; }
-    .svc-local-intro-body { font-size: 17px; line-height: 1.75; color: var(--text-mid); }
+    .svc-local-intro { padding: 72px 0 8px; }
+    .svc-local-intro .container { max-width: 720px; }
+    .svc-local-intro .section-eyebrow { display: block; margin-bottom: 12px; }
+    .svc-local-intro h2 { font-size: clamp(26px, 3.5vw, 34px); line-height: 1.2; margin: 0 0 24px; max-width: 22ch; }
+    .svc-local-intro-body { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
+    .svc-local-intro-body + .svc-local-intro-body { margin-top: 18px; }
+    @media (min-width: 768px) {
+      .svc-local-intro { padding: 96px 0 16px; }
+      .svc-local-intro-body + .svc-local-intro-body { margin-top: 22px; }
+    }
 
     /* Item 5: Materials & Specifications grid */
     .svc-specs { padding: 72px 0; }
@@ -950,8 +956,11 @@ ul { list-style: none; }
   <!-- ── Item 5: Local Intro ─────────────────────────────────────────── -->
   <section class="svc-local-intro" aria-labelledby="local-intro-heading">
     <div class="container">
+      <span class="section-eyebrow">Built for Windsor</span>
       <h2 id="local-intro-heading">Custom Putting Greens for Windsor and Essex County Homes</h2>
-      <p class="svc-local-intro-body">A backyard putting green only works if it rolls true year after year — through clay-soil settlement, Windsor's freeze-thaw cycles, and the kind of sun exposure most south-facing Essex County yards get. That means a different base spec than a standard backyard install: a tighter aggregate, more careful contouring during the build, and a low-profile turf rated to a specific stimp range. We design every green around the layout you want — single-hole practice, multi-hole short course, or pitching-and-putting combo — and tune the contours during the base build so the ball behaves the way it should.</p>
+      <p class="svc-local-intro-body">A backyard putting green only works if it rolls true year after year. Through clay-soil settlement. Through Windsor's freeze-thaw cycles. Through the south-facing summer sun most Essex County yards get.</p>
+<p class="svc-local-intro-body">That means a different spec than a standard backyard install — a tighter aggregate base, more careful contouring during the build, and a low-profile turf rated to a specific stimp range.</p>
+<p class="svc-local-intro-body">We design every green around the layout you want. Single-hole practice, multi-hole short course, or pitching-and-putting combo. The contours get tuned during the base build so the ball behaves the way it should from day one.</p>
     </div>
   </section>
 

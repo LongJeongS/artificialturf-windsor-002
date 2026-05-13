@@ -814,6 +814,18 @@ ul { list-style: none; }
     .faq-answer-inner { padding: 0 24px 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; }
     .faq-item.open .faq-answer { max-height: 2000px; }
 
+    /* ── About-the-area prose section (Item 6) ───────────────────────── */
+    .area-about-location { padding: 72px 0; }
+    .area-about-location .container { max-width: 720px; }
+    .area-about-location .section-eyebrow { display: block; margin-bottom: 12px; }
+    .area-about-location .section-title { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; margin: 0 0 24px; }
+    .area-location-blurb { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
+    .area-location-blurb + .area-location-blurb { margin-top: 18px; }
+    @media (min-width: 768px) {
+      .area-about-location { padding: 96px 0; }
+      .area-location-blurb + .area-location-blurb { margin-top: 22px; }
+    }
+
     @media(max-width:992px){ .area-intro-grid{grid-template-columns:1fr;} .area-services-grid{grid-template-columns:1fr 1fr;} }
     @media(max-width:768px){ .area-services-grid{grid-template-columns:1fr;} .area-testimonials-grid{grid-template-columns:1fr;} }
   </style>
@@ -1044,11 +1056,14 @@ ul { list-style: none; }
   </section>
 
   <!-- ── Item 6: About {Area} — location-context blurb near the bottom ───── -->
-  <section class="area-about-location section-pad" aria-labelledby="about-location-heading">
-    <div class="container" style="max-width:760px;">
+  <section class="area-about-location" aria-labelledby="about-location-heading">
+    <div class="container">
       <span class="section-eyebrow">About the Area</span>
       <h2 id="about-location-heading" class="section-title">About Tecumseh</h2>
-      <p class="area-location-blurb" style="font-size:16px;line-height:1.8;color:var(--text-mid);">Tecumseh sits east of Windsor along the Lake St. Clair shoreline, a town defined by its mature residential streetscapes and proximity to the lake. The older sections of Old Tecumseh and the streets surrounding Tecumseh Arena are lined with established maples and oaks, which creates the shaded, patchy lawn problem that drives a lot of the artificial turf conversions in the area. Closer to Lakewood Park and the St. Clair Beach stretch, lots tend to open up and lake-effect weather becomes a real factor in lawn-care decisions. Tecumseh sees milder, more humid summers than the inland parts of Essex County thanks to the moderating effect of Lake St. Clair, and lake-effect snow squalls occasionally extend the winter season by a few weeks compared to Windsor or LaSalle. For turf, the practical implication is twofold: shaded yards in the older neighbourhoods stay damp longer through spring, which natural grass struggles with and properly installed turf solves; and the lake-adjacent areas need a drainage-first sub-base spec because of higher spring water tables. Most of the installs we complete in Tecumseh are residential conversions where the homeowner has tried overseeding and dethatching for years without resolving the bare-patch cycle.</p>
+      <p class="area-location-blurb">Tecumseh sits east of Windsor along the Lake St. Clair shoreline — a town defined by its mature residential streetscapes and proximity to the lake. The older sections of Old Tecumseh and the streets surrounding Tecumseh Arena are lined with established maples and oaks.</p>
+<p class="area-location-blurb">That mature tree cover creates the shaded, patchy lawn problem that drives a lot of the artificial turf conversions in the area. Closer to Lakewood Park and the St. Clair Beach stretch, lots open up and lake-effect weather becomes a real factor in lawn-care decisions.</p>
+<p class="area-location-blurb">Tecumseh sees milder, more humid summers than the inland parts of Essex County thanks to the moderating effect of Lake St. Clair. Lake-effect snow squalls occasionally extend the winter season by a few weeks compared to Windsor or LaSalle.</p>
+<p class="area-location-blurb">Two practical implications for turf here. Shaded yards in the older neighbourhoods stay damp longer through spring — natural grass struggles with this and properly installed turf solves it. And the lake-adjacent areas need a drainage-first sub-base because of higher spring water tables. Most of the installs we complete in Tecumseh are residential conversions where the homeowner has tried overseeding and dethatching for years without resolving the bare-patch cycle.</p>
     </div>
   </section>
 
