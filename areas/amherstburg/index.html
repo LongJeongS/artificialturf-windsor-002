@@ -1078,12 +1078,24 @@ ul { list-style: none; }
 
 </main>
 
-<!-- Item 7: LocalBusiness reference-only block (@id refers to home page's full definition) -->
+<!-- Item 7: LocalBusiness (self-contained per Google validator; @id keeps the entity linked to home) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://artificialturfwindsor.ca#organization",
+  "name": "Windsor Turf Pros",
+  "image": "https://artificialturfwindsor.ca/favicon.svg",
+  "url": "https://artificialturfwindsor.ca",
+  "telephone": "+1 (226) 212-0631",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Windsor",
+    "addressRegion": "ON",
+    "postalCode": "N9A 4J8",
+    "addressCountry": "CA"
+  },
   "areaServed": {
     "@type": "City",
     "name": "Amherstburg",
