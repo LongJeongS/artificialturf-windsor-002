@@ -21,10 +21,11 @@
     "areas/essex/index.html",
     "areas/kingsville/index.html",
     "areas/leamington/index.html",
-    "areas/harrow/index.html"
+    "areas/harrow/index.html",
+    "cost-guides/artificial-turf-cost-windsor/index.html"
   ],
-  "total_pages": 21,
-  "image_count": 0,
+  "total_pages": 22,
+  "image_count": 40,
   "all_urls": [
     "/",
     "/about/",
@@ -47,6 +48,7 @@
     "/areas/kingsville/",
     "/areas/leamington/",
     "/areas/harrow/",
+    "/cost-guides/artificial-turf-cost-windsor/",
     "/blog/",
     "/blog/artificial-turf-windsor-summers-what-you-need-to-know/",
     "/blog/artificial-turf-windsor-spring-prep-guide/",
@@ -56,5 +58,5 @@
     "/blog/why-artificial-turf-looks-fake-and-how-to-avoid-it/",
     "/blog/artificial-turf-windsor-winters-what-you-need-to-know/"
   ],
-  "assembled_at": "2026-05-14T00:03:29.488099+00:00"
+  "assembled_at": "2026-05-18T19:38:32.653087+00:00"
 }
