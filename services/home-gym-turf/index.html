@@ -5,53 +5,56 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="preload" as="image" href="/images/why_us.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/service_9_hero.webp" fetchpriority="high">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- area_page_meta_title is set per-area by stage4 -->
-  <title>Artificial Grass LaSalle Ontario | Windsor Turf Pros · +1 (226) 212-0631</title>
-  <meta name="description" content="Artificial grass installation in LaSalle Ontario. Windsor Turf Pros — licensed, insured, free estimates. Serving LaSalle and surrounding Essex County communities.">
-  <link rel="canonical" href="https://artificialturfwindsor.ca/areas/lasalle/">
+  <!-- service_page_meta_title is set per-service by stage4 -->
+  <title>Home Gym Turf Windsor | Windsor Turf Pros · +1 (226) 212-0631</title>
+  <meta name="description" content="Gym turf for garage gyms, basements, and training floors in Windsor Ontario. Sled-rated pile over a shock pad, fitted to your space. Free estimates.">
+  <link rel="canonical" href="https://artificialturfwindsor.ca/services/home-gym-turf/">
   <!-- Open Graph -->
-  <meta property="og:title" content="Artificial Grass LaSalle Ontario | Windsor Turf Pros · +1 (226) 212-0631">
-  <meta property="og:description" content="Artificial grass installation in LaSalle Ontario. Windsor Turf Pros — licensed, insured, free estimates. Serving LaSalle and surrounding Essex County communities.">
-  <meta property="og:url" content="https://artificialturfwindsor.ca/areas/lasalle/">
+  <meta property="og:title" content="Home Gym Turf Windsor | Windsor Turf Pros · +1 (226) 212-0631">
+  <meta property="og:description" content="Gym turf for garage gyms, basements, and training floors in Windsor Ontario. Sled-rated pile over a shock pad, fitted to your space. Free estimates.">
+  <meta property="og:url" content="https://artificialturfwindsor.ca/services/home-gym-turf/">
   <meta property="og:image" content="https://artificialturfwindsor.ca/images/hero_bg.webp">
   <meta property="og:type" content="website">
-  <!-- BreadcrumbList schema -->
+  <!-- Service + BreadcrumbList schema (Item 7: @id provider reference, full structured areaServed, category) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://artificialturfwindsor.ca" },
-      { "@type": "ListItem", "position": 2, "name": "LaSalle", "item": "https://artificialturfwindsor.ca/areas/lasalle/" }
-    ]
-  }
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Home Gym Turf",
+      "description": "Gym turf for garage gyms, basements, and training floors in Windsor Ontario. Sled-rated pile over a shock pad, fitted to your space. Free estimates.",
+      "category": "Artificial Turf Services",
+      "provider": { "@id": "https://artificialturfwindsor.ca#organization" },
+      "areaServed": [
+        {"@type": "City", "name": "Windsor", "address": {"@type": "PostalAddress", "addressLocality": "Windsor", "addressRegion": "ON", "postalCode": "N9A", "addressCountry": "CA"}},
+      {"@type": "City", "name": "LaSalle", "address": {"@type": "PostalAddress", "addressLocality": "LaSalle", "addressRegion": "ON", "postalCode": "N9J", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Tecumseh", "address": {"@type": "PostalAddress", "addressLocality": "Tecumseh", "addressRegion": "ON", "postalCode": "N8N", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Amherstburg", "address": {"@type": "PostalAddress", "addressLocality": "Amherstburg", "addressRegion": "ON", "postalCode": "N9V", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Lakeshore", "address": {"@type": "PostalAddress", "addressLocality": "Lakeshore", "addressRegion": "ON", "postalCode": "N0R", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Essex", "address": {"@type": "PostalAddress", "addressLocality": "Essex", "addressRegion": "ON", "postalCode": "N8M", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Kingsville", "address": {"@type": "PostalAddress", "addressLocality": "Kingsville", "addressRegion": "ON", "postalCode": "N9Y", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Leamington", "address": {"@type": "PostalAddress", "addressLocality": "Leamington", "addressRegion": "ON", "postalCode": "N8H", "addressCountry": "CA"}},
+      {"@type": "City", "name": "Harrow", "address": {"@type": "PostalAddress", "addressLocality": "Harrow", "addressRegion": "ON", "postalCode": "N0R", "addressCountry": "CA"}}
+      ],
+      "url": "https://artificialturfwindsor.ca/services/home-gym-turf/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://artificialturfwindsor.ca" },
+        { "@type": "ListItem", "position": 2, "name": "Home Gym Turf", "item": "https://artificialturfwindsor.ca/services/home-gym-turf/" }
+      ]
+    }
+  ]
   </script>
-  <!-- Item 7: Place schema for this service area (geo + postal + containedInPlace) -->
+  <!-- FAQPage schema for service-specific Q&A -->
   <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "Place",
-  "name": "LaSalle",
-  "containedInPlace": {
-    "@type": "City",
-    "name": "Windsor"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "42.2479",
-    "longitude": "-83.0606"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "LaSalle",
-    "addressRegion": "ON",
-    "postalCode": "N9J",
-    "addressCountry": "CA"
-  }
-}
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does home gym turf cost in Windsor?", "acceptedAnswer": {"@type": "Answer", "text": "Gym turf sits toward the higher end of the $8 to $18 per square foot range that turf typically runs in Ontario, because the pile is denser and a shock pad usually goes underneath. A single-bay garage is a much smaller area than a backyard, so the total often comes in lower than people expect. We'll quote your exact footprint free."}}, {"@type": "Question", "name": "Can gym turf go over a garage floor?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and a garage slab is close to ideal. It's flat, it's already load-rated, and it doesn't need the drainage an outdoor install does. We check for moisture coming up through the slab first, since that's the one thing that causes problems later."}}, {"@type": "Question", "name": "What's the difference between gym turf and landscape turf?", "acceptedAnswer": {"@type": "Answer", "text": "Pile height and density. Gym turf runs short and tightly packed so a sled glides instead of digging in, and so the fibres don't crush flat under a rack. Landscape turf has a longer, softer blade that looks better outdoors but wears out fast under equipment."}}, {"@type": "Question", "name": "How long does a gym turf install take in Windsor?", "acceptedAnswer": {"@type": "Answer", "text": "Most single-bay garages and basement rooms finish in a day. The shock pad and turf both go down quickly on a flat slab, and the time goes into cutting around posts, stairs, floor drains, and any rack that's bolted down. Two-bay garages and larger training rooms can run into a second day."}}, {"@type": "Question", "name": "Is gym turf covered by the same warranty?", "acceptedAnswer": {"@type": "Answer", "text": "Yes for the workmanship side, which covers seams and edges the same as any other install. The turf product carries a manufacturer warranty of its own, though wear-rated gym products are usually written on different terms than outdoor UV coverage. Your written quote lays out which terms apply."}}]}
   </script>
   <style>
     /* ═══════════════════════════════════════════════════════════════
@@ -1584,71 +1587,102 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
   .quote-form-card { padding: 28px 20px; }
 }
 
-    /* ── AREA PAGE ───────────────────────────────────────────────────────────── */
-    .area-hero { position: relative; background: var(--color-primary) center/cover no-repeat; min-height: 400px; display: flex; align-items: center; }
-    .area-hero::after { content:''; position:absolute; inset:0; background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%); }
-    .area-hero .container { position: relative; z-index: 1; padding-top: 80px; padding-bottom: 56px; text-align: center; }
-    .area-hero .section-eyebrow { color: var(--color-accent); }
-    .area-hero h1 { font-size: clamp(28px,5vw,50px); font-weight: 700; color: var(--white); margin-bottom: 14px; }
-    .area-hero p { font-size: 18px; color: rgba(255,255,255,0.85); max-width: 560px; margin: 0 auto 28px; }
-    .area-intro { padding: 72px 0; background: var(--color-bg); }
-    .area-intro-grid { display: grid; grid-template-columns: 1fr 340px; gap: 48px; align-items: start; }
-    .area-intro-body { font-size: 17px; line-height: 1.8; color: var(--text-mid); }
-    .area-cta-card { background: var(--color-primary); border-radius: var(--radius); padding: 32px 28px; color: var(--white); }
-    .area-cta-card h3 { font-size: 20px; color: var(--white); margin-bottom: 10px; }
-    .area-cta-card p { font-size: 15px; color: rgba(255,255,255,0.8); margin-bottom: 20px; }
-    .area-cta-phone { display: flex; align-items: center; gap: 10px; color: var(--color-accent); font-size: 18px; font-weight: 700; margin-bottom: 14px; text-decoration: none; }
-    .area-services { padding: 72px 0; }
-    .area-services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-top: 36px; }
-    .area-services-grid.services-grid--3col { grid-template-columns: repeat(3, 1fr); }
-    .area-service-card { background: var(--color-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition); }
-    .area-service-card:hover { border-color: var(--color-accent); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
-    .area-service-card h3 { font-size: 17px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px; }
-    .area-service-card p { font-size: 14px; color: var(--text-mid); margin-bottom: 14px; line-height: 1.6; }
-    .area-service-card a { font-size: 14px; font-weight: 700; color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
-    .area-testimonials { padding: 72px 0; background: var(--color-bg); }
-    .area-testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 36px; }
-    .area-testimonial-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow-sm); }
-    /* Item 3: .area-testimonial-stars removed — fake-rating compliance. */
-    .area-testimonial-quote { font-size: 15px; line-height: 1.7; font-style: italic; color: var(--text-mid); margin-bottom: 16px; }
-    .area-testimonial-meta { font-size: 14px; font-weight: 700; color: var(--color-text); }
-    .area-testimonial-location { font-size: 13px; color: var(--text-light); }
-    .area-nearby { padding: 56px 0; }
-    .area-nearby h2 { font-size: 22px; margin-bottom: 20px; }
-    .nearby-pills { display: flex; flex-wrap: wrap; gap: 10px; }
-    .nearby-pill { display: inline-block; padding: 8px 16px; border: 1px solid var(--border); border-radius: 20px; font-size: 14px; color: var(--text-mid); text-decoration: none; transition: background var(--transition), color var(--transition), border-color var(--transition); }
-    .nearby-pill:hover { background: var(--color-primary); color: var(--white); border-color: var(--color-primary); }
+    /* ── SERVICE PAGE ────────────────────────────────────────────────────────── */
+    .svc-hero { position: relative; background: var(--color-primary) center/cover no-repeat; min-height: 480px; display: flex; align-items: center; }
+    .svc-hero::after { content:''; position:absolute; inset:0; background: linear-gradient(to right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.35) 60%, transparent 100%); }
+    .svc-hero .container { position: relative; z-index: 1; padding-top: 80px; padding-bottom: 60px; }
+    .svc-hero-eyebrow { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--color-accent); margin-bottom: 12px; }
+    .svc-hero h1 { font-size: clamp(30px,5vw,52px); font-weight: 700; color: var(--white); margin-bottom: 16px; max-width: 680px; }
+    .svc-hero p { font-size: 18px; color: rgba(255,255,255,0.85); max-width: 520px; margin-bottom: 32px; line-height: 1.6; }
+    .svc-hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    /* Item 5: Local intro section (between hero and benefits) */
+    .svc-local-intro { padding: 72px 0 8px; }
+    .svc-local-intro .container { max-width: 720px; }
+    .svc-local-intro .section-eyebrow { display: block; margin-bottom: 12px; }
+    .svc-local-intro h2 { font-size: clamp(26px, 3.5vw, 34px); line-height: 1.2; margin: 0 0 24px; max-width: 22ch; }
+    .svc-local-intro-body { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
+    .svc-local-intro-body + .svc-local-intro-body { margin-top: 18px; }
+    @media (min-width: 768px) {
+      .svc-local-intro { padding: 96px 0 16px; }
+      .svc-local-intro-body + .svc-local-intro-body { margin-top: 22px; }
+    }
+
+    /* Item 5: Materials & Specifications grid */
+    .svc-specs { padding: 72px 0; }
+    .specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 36px; }
+    .spec-item { background: var(--color-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 20px; display: flex; align-items: flex-start; gap: 14px; transition: transform var(--transition), box-shadow var(--transition); }
+    .spec-item:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+    .spec-icon { width: 46px; height: 46px; background: var(--color-primary); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--white); }
+    .spec-icon svg { width: 24px; height: 24px; }
+    .spec-text { flex: 1; min-width: 0; }
+    .spec-label { font-size: 13px; font-weight: 700; color: var(--color-text); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+    .spec-value { font-size: 14px; line-height: 1.55; color: var(--text-mid); }
+
+    /* Item 5: Ideal Applications grid (after process, before FAQs) */
+    .svc-applications { padding: 72px 0; background: var(--color-bg); }
+    .applications-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 36px; }
+    .application-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; transition: transform var(--transition), box-shadow var(--transition); }
+    .application-item:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+    .application-item h3 { font-size: 16px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px; }
+    .application-item p { font-size: 14px; line-height: 1.6; color: var(--text-mid); }
+
+    /* Benefits */
+    .svc-benefits { padding: 72px 0; background: var(--color-bg); }
+    .benefits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 36px; }
+    .benefit-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; box-shadow: var(--shadow-sm); transition: transform var(--transition), box-shadow var(--transition); }
+    .benefit-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .benefit-icon { width: 48px; height: 48px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; color: var(--white); }
+    .benefit-title { font-size: 16px; font-weight: 700; color: var(--color-text); margin-bottom: 8px; }
+    .benefit-body { font-size: 14px; line-height: 1.65; color: var(--text-mid); }
+
+    /* Process */
+    .svc-process { padding: 72px 0; }
+    /* Step strip */
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 48px; position: relative; }
+    .process-steps::before { content: ''; position: absolute; top: 26px; left: calc(12.5% + 14px); right: calc(12.5% + 14px); height: 2px; background: var(--border); z-index: 0; }
+    .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 20px; position: relative; z-index: 1; }
+    .process-step-num { width: 52px; height: 52px; border-radius: 50%; background: var(--color-primary); color: var(--white); font-family: var(--font-heading); font-size: 20px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-bottom: 20px; box-shadow: 0 0 0 6px var(--color-bg); }
+    .process-step h3 { font-size: 16px; font-weight: 700; color: var(--color-text); margin: 0 0 10px; line-height: 1.3; }
+    .process-step p { font-size: 14px; color: var(--text-mid); margin: 0; line-height: 1.65; }
+    /* Finished-work image below steps */
+    .process-result-img { margin-top: 56px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-md); }
+    .process-result-img img { width: 100%; aspect-ratio: 16/7; object-fit: cover; display: block; }
+
+    /* Service FAQs */
+    .svc-faqs { padding: 72px 0; background: var(--color-bg); }
+    .svc-faq-list { max-width: 800px; margin: 36px auto 0; display: flex; flex-direction: column; gap: 12px; }
+    .svc-faq-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); }
+    .svc-faq-question { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 20px; cursor: pointer; font-size: 15px; font-weight: 600; color: var(--color-text); list-style: none; }
+    .svc-faq-question::marker, .svc-faq-question::-webkit-details-marker { display: none; }
+    .svc-faq-question svg { flex-shrink: 0; transition: transform 0.25s; color: var(--color-accent); }
+    details[open] .svc-faq-question svg { transform: rotate(45deg); }
+    .svc-faq-question:hover { background: rgba(0,0,0,0.025); }
+    .svc-faq-answer { padding: 0 20px 18px; font-size: 15px; line-height: 1.7; color: var(--text-mid); }
+
+    /* Related services */
+    .related-services { padding: 72px 0; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 36px; }
+    .related-card { background: var(--color-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; display: flex; flex-direction: column; gap: 12px; transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition); text-decoration: none; }
+    .related-card:hover { border-color: var(--color-primary); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+    .related-card h3 { font-size: 18px; font-weight: 700; color: var(--color-primary); }
+    .related-card p { font-size: 14px; line-height: 1.65; color: var(--text-mid); flex: 1; }
+    .related-card-link { font-size: 14px; font-weight: 700; color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; pointer-events: none; }
 
     /* CTA band */
-    #cta-band { background: var(--color-accent); padding: 60px 0; text-align: center; }
+    #cta-band { background: var(--color-accent); padding: 40px 0; text-align: center; }
     #cta-band h2 { font-family: var(--font-heading); font-size: clamp(24px,4vw,36px); font-weight: 700; color: var(--white); margin-bottom: 12px; }
     #cta-band p { font-size: 17px; color: rgba(255,255,255,0.9); margin-bottom: 28px; }
 
-    /* ── Area local FAQ ─────────────────────────────────────────────── */
-    .area-faq { padding: 56px 0; background: var(--color-bg); }
-    .faq-item { border-bottom: 1px solid var(--border); background: var(--white); margin-bottom: 4px; border-radius: var(--radius); overflow: hidden; }
-    .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 20px 24px; font-size: 16px; font-weight: 600; color: var(--color-text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; transition: background var(--transition); font-family: inherit; }
-    .faq-question:hover { background: var(--color-bg); }
-    .faq-icon { width: 28px; height: 28px; border-radius: 50%; background: var(--color-bg); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; font-weight: 300; color: var(--color-primary); transition: transform 0.25s, background 0.15s; }
-    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--color-primary); color: var(--white); }
-    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.25, 1, 0.5, 1), padding 0.2s; }
-    .faq-answer-inner { padding: 0 24px 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; }
-    .faq-item.open .faq-answer { max-height: 2000px; }
-
-    /* ── About-the-area prose section (Item 6) ───────────────────────── */
-    .area-about-location { padding: 72px 0; }
-    .area-about-location .container { max-width: 720px; }
-    .area-about-location .section-eyebrow { display: block; margin-bottom: 12px; }
-    .area-about-location .section-title { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; margin: 0 0 24px; }
-    .area-location-blurb { font-size: 17px; line-height: 1.75; color: var(--text-mid); margin: 0; }
-    .area-location-blurb + .area-location-blurb { margin-top: 18px; }
-    @media (min-width: 768px) {
-      .area-about-location { padding: 96px 0; }
-      .area-location-blurb + .area-location-blurb { margin-top: 22px; }
+    @media(max-width:992px){ .benefits-grid{grid-template-columns:1fr 1fr;} .related-grid{grid-template-columns:1fr 1fr;} }
+    @media(max-width:768px){
+      .benefits-grid{grid-template-columns:1fr;} .related-grid{grid-template-columns:1fr;}
+      .process-steps { grid-template-columns: 1fr 1fr; gap: 32px 16px; }
+      .process-steps::before { display: none; }
     }
-
-    @media(max-width:992px){ .area-intro-grid{grid-template-columns:1fr;} .area-services-grid{grid-template-columns:1fr 1fr;} }
-    @media(max-width:768px){ .area-services-grid{grid-template-columns:1fr;} .area-testimonials-grid{grid-template-columns:1fr;} }
+    @media(max-width:480px){
+      .process-steps { grid-template-columns: 1fr; }
+    }
   </style>
   <script>
 (function(c,a,l,s){
@@ -1730,189 +1764,254 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
   </nav>
 </header>
 
-<main id="page-content" style="margin-top:80px;" aria-label="Service area page">
+<main id="page-content" style="margin-top:80px;" aria-label="Service page">
 
-  <!-- ── Area Hero ─────────────────────────────────────────────────────── -->
-  <section class="area-hero" style="background-image:url('/images/why_us.webp');">
+  <!-- ── Service Hero ───────────────────────────────────────────────────── -->
+  <section class="svc-hero" style="background-image:url('/images/service_9_hero.webp');" aria-label="Home gym turf installation in a Windsor Ontario garage by Windsor Turf Pros">
     <div class="container">
-      <span class="section-eyebrow">Service Area</span>
-      <h1>Artificial Turf Installation in LaSalle Ontario</h1>
-      <p class="area-coords" aria-hidden="true">42.2479&deg; N &middot; -83.0606&deg; W</p>
-      <p>Serving LaSalle homeowners with licensed, warranted turf installations.</p>
-      <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
+      <span class="svc-hero-eyebrow">What We Do</span>
+      <h1>Home Gym Turf Installation in Windsor Ontario</h1>
+      <p>Sled-rated turf that takes dropped plates and prowler pushes.</p>
+      <div class="svc-hero-actions">
+        <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
+        <a href="tel:+12262120631" class="btn-outline-white">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:8px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call +1 (226) 212-0631
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- ── Local Intro ────────────────────────────────────────────────────── -->
-  <section class="area-intro">
+  <!-- ── Item 5: Local Intro ─────────────────────────────────────────── -->
+  <section class="svc-local-intro" aria-labelledby="local-intro-heading">
     <div class="container">
-      <div class="area-intro-grid">
-        <div>
-          <span class="section-eyebrow">LaSalle</span>
-          <h2 class="section-title" style="max-width:none;">Windsor Turf Pros in LaSalle</h2>
-          <p class="area-intro-body">LaSalle is one of the fastest-growing communities in Essex County — and with larger residential lots comes more lawn to maintain. Many LaSalle homeowners are making the switch to artificial turf to reclaim their weekends without sacrificing the look of a well-kept yard. Windsor Turf Pros serves LaSalle regularly and can typically schedule a free estimate the same week you call.</p>
+      <span class="section-eyebrow">Built for Windsor</span>
+      <h2 id="local-intro-heading">Garage and Basement Gym Turf in Windsor</h2>
+      <p class="svc-local-intro-body">Windsor garages sit unheated through February and turn humid in July, and rubber mats over a cold slab is where most home gyms stop. The floor never quite feels right and the sled has nowhere to go.</p>
+<p class="svc-local-intro-body">Gym turf is a different product from lawn turf. Short, dense pile over a shock pad, laid so a sled tracks straight and a dropped plate hits something with give in it rather than bare concrete.</p>
+<p class="svc-local-intro-body">We fit it to your bay, cut around posts and bolted racks, and mark a lane if you want one. Send us your dimensions for a free written estimate.</p>
+    </div>
+  </section>
+
+  <!-- ── Benefits ──────────────────────────────────────────────────────── -->
+  <section class="svc-benefits" aria-labelledby="benefits-heading">
+    <div class="container">
+      <span class="section-eyebrow">Why Choose Us</span>
+      <h2 id="benefits-heading" class="section-title">Why Windsor Homeowners Choose Us for Home Gym Turf</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon" data-ms="verified" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="benefit-title">Built For Sleds</div>
+          <div class="benefit-body">Short, dense pile rated for sled and prowler tracks, not the soft landscape turf that shreds under load.</div>
         </div>
-        <div class="area-cta-card">
-          <h3>Get a Free Estimate</h3>
-          <p>We serve LaSalle and surrounding neighbourhoods. Contact us today for a no-obligation quote.</p>
-          <a href="tel:+12262120631" class="area-cta-phone">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            +1 (226) 212-0631
-          </a>
-          <a href="/contact/" class="btn btn-primary" style="width:100%; justify-content:center;">Request a Quote</a>
+        <div class="benefit-card">
+          <div class="benefit-icon" data-ms="verified" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <div class="benefit-title">Protects The Slab</div>
+          <div class="benefit-body">A shock pad under the turf absorbs dropped plates so the concrete below doesn't chip or crack.</div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon" data-ms="verified" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="benefit-title">Quieter Than Mats</div>
+          <div class="benefit-body">Turf over pad deadens the noise of dropped weights better than bare rubber on a garage floor.</div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon" data-ms="verified" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></div>
+          <div class="benefit-title">Cut To Your Space</div>
+          <div class="benefit-body">Rolls are fitted to your garage or basement footprint, including around posts, stairs, and rack bolt-downs.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Services in this Area ─────────────────────────────────────────── -->
-  <section class="area-services section-pad" aria-labelledby="area-services-heading">
+  <!-- ── Item 5: Materials & Specifications ────────────────────────────── -->
+  <section class="svc-specs" aria-labelledby="specs-heading">
     <div class="container">
-      <span class="section-eyebrow">Our Services</span>
-      <h2 id="area-services-heading" class="section-title">Services Available in LaSalle</h2>
-      <div class="area-services-grid services-grid--3col">
-<div class="area-service-card">
-  <h3>Backyard Turf in LaSalle</h3>
-  <p>Full-service artificial turf installation for residential backyards across Windsor and Essex County. We handle site prep, drainage, and installation from start to finish.</p>
-  <a href="/services/backyard-turf/">Learn more →</a>
-</div>
-<div class="area-service-card">
-  <h3>Playground Turf in LaSalle</h3>
-  <p>Safe, cushioned artificial turf for residential and community playground areas. Designed for active play with proper impact absorption and easy cleanup.</p>
-  <a href="/services/playground-turf/">Learn more →</a>
-</div>
-<div class="area-service-card">
-  <h3>Putting Greens in LaSalle</h3>
-  <p>Custom backyard putting greens for Windsor homeowners who want a short-game practice space at home. Built to your layout with performance-grade turf.</p>
-  <a href="/services/putting-greens/">Learn more →</a>
-</div>
-<div class="area-service-card">
-  <h3>Swimming Pool Turf in LaSalle</h3>
-  <p>Slip-resistant artificial turf designed for pool surrounds and deck areas. Stays cool underfoot, drains fast, and eliminates the mud and grass tracked into the pool.</p>
-  <a href="/services/swimming-pool-turf/">Learn more →</a>
-</div>
-<div class="area-service-card">
-  <h3>Pet-Friendly Turf in LaSalle</h3>
-  <p>Durable, odour-resistant artificial turf designed specifically for homes with dogs and cats. Drains quickly, cleans easily, and holds up to heavy pet traffic.</p>
-  <a href="/services/pet-friendly-turf/">Learn more →</a>
-</div>
-<div class="area-service-card">
-  <h3>Rooftop & Deck Turf in LaSalle</h3>
-  <p>Weather-rated artificial turf for rooftop terraces and elevated deck surfaces. Turns a flat roof or a second-storey deck into a space that actually gets used.</p>
-  <a href="/services/rooftop-deck-turf/">Learn more →</a>
-</div>
-<div class="area-service-card">
-  <h3>Balcony Turf in LaSalle</h3>
-  <p>Artificial turf sized and fitted for condo and apartment balconies. Floating install with no adhesive, drainage that keeps water moving, and a finish that usually goes down in a single visit.</p>
-  <a href="/services/balcony-turf/">Learn more →</a>
-</div>
-<div class="area-service-card">
-  <h3>Patio Turf in LaSalle</h3>
-  <p>Artificial turf laid over existing concrete, paver, and stone patios. Covers a cracked or stained slab without demolition, and turns a hard surface into one you can sit down on.</p>
-  <a href="/services/patio-turf/">Learn more →</a>
-</div>
-<div class="area-service-card">
-  <h3>Home Gym Turf in LaSalle</h3>
-  <p>Sled-rated turf for garage gyms, basement lifting areas, and light commercial floors. Built to take dropped plates and prowler pushes that landscape turf won't survive.</p>
-  <a href="/services/home-gym-turf/">Learn more →</a>
-</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Testimonials ───────────────────────────────────────────────────── -->
-  <section class="area-testimonials" aria-labelledby="area-testimonials-heading">
-    <div class="container">
-      <span class="section-eyebrow">Customer Reviews</span>
-      <h2 id="area-testimonials-heading" class="section-title">What LaSalle Customers Say</h2>
-      <div class="area-testimonials-grid">
-        <div class="area-testimonial-card">
-          <blockquote class="area-testimonial-quote">"We have two golden retrievers and the old lawn was a mud disaster every spring. The pet turf has been a game changer — easy to rinse, no smell, and the dogs love it."</blockquote>
-          <div class="area-testimonial-meta">Marco D.</div>
-          <div class="area-testimonial-location">South Windsor</div>
+      <span class="section-eyebrow">Materials &amp; Specs</span>
+      <h2 id="specs-heading" class="section-title">What We Use for Home Gym Turf</h2>
+      <p class="section-subtitle">Industry-standard materials and specifications you can rely on.</p>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <div class="spec-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 000 20"/><path d="M12 2a10 10 0 010 20"/><path d="M2 12h20"/></svg></div>
+          <div class="spec-text">
+            <div class="spec-label">Pile Height</div>
+            <div class="spec-value">0.5–0.75 inch (industry typical for sled and gym use)</div>
+          </div>
         </div>
-        <div class="area-testimonial-card">
-          <blockquote class="area-testimonial-quote">"Had them install turf on our rooftop patio. The quality is outstanding and it completely transformed the space. The crew knew exactly what product would hold up through a Windsor winter."</blockquote>
-          <div class="area-testimonial-meta">Sandra B.</div>
-          <div class="area-testimonial-location">LaSalle</div>
+        <div class="spec-item">
+          <div class="spec-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="spec-text">
+            <div class="spec-label">Yarn Weight</div>
+            <div class="spec-value">50–70 oz/yd² dense nylon or polyethylene blend</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg></div>
+          <div class="spec-text">
+            <div class="spec-label">Shock Pad</div>
+            <div class="spec-value">8–12 mm foam underlay, selected for dropped-weight use</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg></div>
+          <div class="spec-text">
+            <div class="spec-label">Warranty Coverage</div>
+            <div class="spec-value">Manufacturer + workmanship coverage on every install</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14l-5-5-5 5"/><path d="M17 19l-5-5-5 5"/><line x1="12" y1="14" x2="12" y2="22"/></svg></div>
+          <div class="spec-text">
+            <div class="spec-label">Infill Type</div>
+            <div class="spec-value">Silica sand at low volume, or infill-free for indoor use</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Nearby Areas ───────────────────────────────────────────────────── -->
-  <section class="area-nearby section-pad">
+  <!-- ── Process ────────────────────────────────────────────────────────── -->
+  <section class="svc-process section-pad" aria-labelledby="process-heading">
     <div class="container">
-      <span class="section-eyebrow">Where Else We Work</span>
-      <h2 class="section-title">Also Serving Nearby Areas</h2>
+      <span class="section-eyebrow">How It Works</span>
+      <h2 id="process-heading" class="section-title">Turf Installed in 4 Simple Steps</h2>
+      <p class="section-subtitle">From first call to finished yard — here's what the process looks like with Windsor Turf Pros.</p>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-step-num" aria-hidden="true">1</div>
+          <h3>Space And Slab Check</h3>
+          <p>We measure the bay, check the slab for moisture and level, and find out what you're actually doing on it. A sled lane changes the layout more than anything else.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num" aria-hidden="true">2</div>
+          <h3>Lay The Shock Pad</h3>
+          <p>Foam underlay goes down across the slab and gets butted tight at the seams. This is the layer that takes the impact when a plate comes down.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num" aria-hidden="true">3</div>
+          <h3>Roll And Cut The Turf</h3>
+          <p>Turf rolls out over the pad with the pile running the direction of the sled lane, then gets cut to the walls and around posts, steps, and bolted rack feet.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num" aria-hidden="true">4</div>
+          <h3>Seam, Mark And Handover</h3>
+          <p>Seams are joined, any lane markings you asked for go in, and we sweep the space and walk it with you before we leave.</p>
+        </div>
+      </div>
+      <div class="process-result-img">
+        <img src="/images/service_9_hero.webp" alt="Home gym turf installation in a Windsor Ontario garage by Windsor Turf Pros" loading="lazy" width="1200" height="525">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Item 5: Ideal Applications ────────────────────────────────────── -->
+  <section class="svc-applications" aria-labelledby="applications-heading">
+    <div class="container">
+      <span class="section-eyebrow">Where It Works</span>
+      <h2 id="applications-heading" class="section-title">Ideal Applications for Home Gym Turf</h2>
+      <div class="applications-grid">
+        <div class="application-item" data-ms="foundation">
+          <h3>Garage Gyms</h3>
+          <p>Single and double-bay Windsor garages turned into year-round training space over the existing slab.</p>
+        </div>
+        <div class="application-item" data-ms="build">
+          <h3>Sled And Prowler Lanes</h3>
+          <p>Marked turf lanes for pushing and dragging, laid with the pile direction running down the track.</p>
+        </div>
+        <div class="application-item" data-ms="build">
+          <h3>Basement Lifting Areas</h3>
+          <p>Finished basement rooms given a surface that takes dropped dumbbells without marking the floor below.</p>
+        </div>
+        <div class="application-item" data-ms="foundation">
+          <h3>Light Commercial Floors</h3>
+          <p>Small studios and training facilities across Windsor and Essex County needing a durable turf lane.</p>
+        </div>
+        <div class="application-item" data-ms="build">
+          <h3>Backyard Training Pads</h3>
+          <p>Outdoor turf pads for bootcamp-style workouts, drainage-backed for weather and set on a prepared base.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Service FAQs ──────────────────────────────────────────────────── -->
+  <section class="svc-faqs" aria-labelledby="svc-faq-heading">
+    <div class="container">
+      <span class="section-eyebrow">Common Questions</span>
+      <h2 id="svc-faq-heading" class="section-title">Home Gym Turf — Frequently Asked Questions</h2>
+      <div class="svc-faq-list">
+        <details class="svc-faq-item">
+          <summary class="svc-faq-question">How much does home gym turf cost in Windsor?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="svc-faq-answer">Gym turf sits toward the higher end of the $8 to $18 per square foot range that turf typically runs in Ontario, because the pile is denser and a shock pad usually goes underneath. A single-bay garage is a much smaller area than a backyard, so the total often comes in lower than people expect. We'll quote your exact footprint free.</div>
+        </details>
+        <details class="svc-faq-item">
+          <summary class="svc-faq-question">Can gym turf go over a garage floor?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="svc-faq-answer">Yes, and a garage slab is close to ideal. It's flat, it's already load-rated, and it doesn't need the drainage an outdoor install does. We check for moisture coming up through the slab first, since that's the one thing that causes problems later.</div>
+        </details>
+        <details class="svc-faq-item">
+          <summary class="svc-faq-question">What's the difference between gym turf and landscape turf?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="svc-faq-answer">Pile height and density. Gym turf runs short and tightly packed so a sled glides instead of digging in, and so the fibres don't crush flat under a rack. Landscape turf has a longer, softer blade that looks better outdoors but wears out fast under equipment.</div>
+        </details>
+        <!-- Item 5: FAQs 4 + 5 added -->
+        <details class="svc-faq-item">
+          <summary class="svc-faq-question">How long does a gym turf install take in Windsor?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="svc-faq-answer">Most single-bay garages and basement rooms finish in a day. The shock pad and turf both go down quickly on a flat slab, and the time goes into cutting around posts, stairs, floor drains, and any rack that's bolted down. Two-bay garages and larger training rooms can run into a second day.</div>
+        </details>
+        <details class="svc-faq-item">
+          <summary class="svc-faq-question">Is gym turf covered by the same warranty?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="svc-faq-answer">Yes for the workmanship side, which covers seams and edges the same as any other install. The turf product carries a manufacturer warranty of its own, though wear-rated gym products are usually written on different terms than outdoor UV coverage. Your written quote lays out which terms apply.</div>
+        </details>
+      </div>
+      <div style="margin-top:28px; text-align:center;">
+        <a href="/faq/" style="color:var(--color-primary); font-weight:600; text-decoration:underline; text-underline-offset:3px;">See all FAQs →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Related Services ──────────────────────────────────────────────── -->
+  <section class="related-services" aria-labelledby="related-heading">
+    <div class="container">
+      <span class="section-eyebrow">Also Available</span>
+      <h2 id="related-heading" class="section-title">Explore Our Other Services</h2>
+      <div class="related-grid">
+        <a href="/services/backyard-turf/" class="related-card">
+          <h3>Backyard Turf</h3>
+          <p>Full-service artificial turf installation for residential backyards across Windsor and Essex County. We handle site prep, drainage, and installation from start to finish.</p>
+          <span class="related-card-link">Learn more →</span>
+        </a>
+        <a href="/services/playground-turf/" class="related-card">
+          <h3>Playground Turf</h3>
+          <p>Safe, cushioned artificial turf for residential and community playground areas. Designed for active play with proper impact absorption and easy cleanup.</p>
+          <span class="related-card-link">Learn more →</span>
+        </a>
+        <a href="/services/putting-greens/" class="related-card">
+          <h3>Putting Greens</h3>
+          <p>Custom backyard putting greens for Windsor homeowners who want a short-game practice space at home. Built to your layout with performance-grade turf.</p>
+          <span class="related-card-link">Learn more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Service Areas ────────────────────────────────────────────────────── -->
+  <section id="service-areas" class="section-pad" aria-labelledby="areas-heading">
+    <div class="container">
+      <div class="areas-header">
+        <span class="section-eyebrow">Where We Work</span>
+        <h2 class="section-title" id="areas-heading">Serving Windsor & Essex County</h2>
+        <p class="section-subtitle" style="margin:0 auto 32px;">We cover Windsor and the surrounding area within approximately 40 kilometres — from LaSalle and Tecumseh to Leamington and Harrow.</p>
+      </div>
       <div class="areas-grid">
-<a href="/" class="area-card" data-area="Windsor"><span class="area-card-name">Windsor</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a href="/areas/tecumseh/" class="area-card" data-area="Tecumseh"><span class="area-card-name">Tecumseh</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a href="/areas/amherstburg/" class="area-card" data-area="Amherstburg"><span class="area-card-name">Amherstburg</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a href="/areas/lakeshore/" class="area-card" data-area="Lakeshore"><span class="area-card-name">Lakeshore</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a href="/areas/essex/" class="area-card" data-area="Essex"><span class="area-card-name">Essex</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a href="/areas/kingsville/" class="area-card" data-area="Kingsville"><span class="area-card-name">Kingsville</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a href="/areas/leamington/" class="area-card" data-area="Leamington"><span class="area-card-name">Leamington</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a href="/areas/harrow/" class="area-card" data-area="Harrow"><span class="area-card-name">Harrow</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/" class="area-card" data-area="Windsor"><span class="area-card-name">Windsor</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/areas/lasalle/" class="area-card" data-area="LaSalle"><span class="area-card-name">LaSalle</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/areas/tecumseh/" class="area-card" data-area="Tecumseh"><span class="area-card-name">Tecumseh</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/areas/amherstburg/" class="area-card" data-area="Amherstburg"><span class="area-card-name">Amherstburg</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/areas/lakeshore/" class="area-card" data-area="Lakeshore"><span class="area-card-name">Lakeshore</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/areas/essex/" class="area-card" data-area="Essex"><span class="area-card-name">Essex</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/areas/kingsville/" class="area-card" data-area="Kingsville"><span class="area-card-name">Kingsville</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/areas/leamington/" class="area-card" data-area="Leamington"><span class="area-card-name">Leamington</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/areas/harrow/" class="area-card" data-area="Harrow"><span class="area-card-name">Harrow</span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="#" class="area-card" data-area=""><span class="area-card-name"></span><svg class="area-card-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
-    </div>
-  </section>
-
-  <!-- ── Local FAQs ────────────────────────────────────────────────────── -->
-  <section class="area-faq" aria-labelledby="area-faq-heading" style="">
-    <div class="container" style="max-width:760px;">
-      <span class="section-eyebrow">FAQs</span>
-      <h2 id="area-faq-heading" class="section-title" style="text-align:center;margin-bottom:32px;">Common Questions in LaSalle</h2>
-      <div role="list">
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
-            <span>Do you install artificial turf in LaSalle Ontario?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">Yes — LaSalle is one of our most active service areas. We install throughout the municipality and can typically have a free estimate to you within the same week.</div>
-          </div>
-        </div>
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
-            <span>How much does artificial grass installation cost in LaSalle?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">LaSalle installations follow the same pricing as Windsor — typically $8 to $18 per square foot installed depending on site conditions and turf grade. Request a free written estimate for a number specific to your property.</div>
-          </div>
-        </div>
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
-            <span>Does artificial grass hold up in Ontario winters with snow and freezing temperatures?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">Yes — modern artificial turf is engineered for Canadian climate conditions. The fibres, backing, and infill are all rated for freeze-thaw cycles. You can leave snow on the turf and it won't damage the surface. Most Windsor homeowners are pleasantly surprised by how well it looks coming out of winter.</div>
-          </div>
-        </div>
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
-            <span>Does synthetic turf get too hot in summer?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">Artificial turf can absorb heat on very sunny days, though shaded areas and pool-adjacent installations tend to stay cooler. For areas where heat is a concern — like a children's play space — we can discuss infill options that reduce surface temperature. A quick rinse with the hose cools the surface down in minutes.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Item 6: About {Area} — location-context blurb near the bottom ───── -->
-  <section class="area-about-location" aria-labelledby="about-location-heading">
-    <div class="container">
-      <span class="section-eyebrow">About the Area</span>
-      <h2 id="about-location-heading" class="section-title">About LaSalle</h2>
-      <p class="area-location-blurb">LaSalle is the suburban municipality immediately southwest of Windsor along the Detroit River, and one of the fastest-growing residential communities in Essex County. The town's character is shaped by larger residential lots, mature tree cover in areas like Heritage Estates and Olde Town LaSalle, and the riverfront promenade that runs along Front Road through Gil Maure Park toward the Vollmer Centre.</p>
-<p class="area-location-blurb">Homeowners in LaSalle are typically working with more outdoor space than they would in central Windsor. That changes the economics of artificial turf — the labour savings scale faster on a half-acre lot than on a compact downtown property.</p>
-<p class="area-location-blurb">LaSalle sits inside the same Detroit River micro-corridor as Windsor. Clay-heavy soil that needs a properly compacted sub-base to handle freeze-thaw cycling. Hot humid summers that stress natural grass during watering restrictions. The same November-through-April dormancy window that turns lawns brown for half the year.</p>
-<p class="area-location-blurb">Many of the new builds in LaSalle's recent subdivisions come with developer-installed sod that struggles to establish in the area's clay subsoil. A turf conversion solves the recurring patch-and-reseed cycle in one project. We typically run two to three estimates a week across LaSalle through spring and early summer.</p>
     </div>
   </section>
 
@@ -1921,13 +2020,13 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
   <section class="quote-form-section" aria-labelledby="quote-form-heading">
     <div class="container">
       <div class="quote-form-card">
-        <h2 id="quote-form-heading">Get a Free Quote in LaSalle</h2>
+        <h2 id="quote-form-heading">Get a Free Home Gym Turf Quote</h2>
         <p class="quote-form-sub">Tell us about your project &mdash; we&rsquo;ll call you back within one business day.</p>
         <form class="quote-form" action="https://leads-proxy.jeongpark95.workers.dev" method="POST" name="quote-lead" data-leads-form>
           <input type="hidden" name="run_id" value="artificialturf-windsor-002">
           <div class="hp-field" aria-hidden="true"><input type="text" name="company_website" tabindex="-1" autocomplete="off"></div>
           <input type="hidden" name="form_ts" value="">
-          <input type="hidden" name="source_page" value="https://artificialturfwindsor.ca/areas/lasalle/">
+          <input type="hidden" name="source_page" value="https://artificialturfwindsor.ca/services/home-gym-turf/">
           <div class="quote-form-row">
             <input type="text" name="name" placeholder="Your name" required autocomplete="name" aria-label="Full name">
             <input type="tel" name="phone" placeholder="Phone number" required autocomplete="tel" aria-label="Phone number">
@@ -1950,44 +2049,12 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
   <section id="cta-band" aria-labelledby="cta-heading">
     <div class="container">
       <h2 id="cta-heading">Ready to Stop Mowing?</h2>
-      <p>We'll visit your property and provide a written estimate within a week — no obligation. Most LaSalle area projects start within two to three weeks of approval.</p>
+      <p>We'll visit your property and provide a written estimate within a week — no obligation. Most Windsor area projects start within two to three weeks of approval.</p>
       <a href="/contact/" class="cta-band-btn">Get a Free Estimate</a>
     </div>
   </section>
 
 </main>
-
-<!-- Item 7: LocalBusiness (self-contained per Google validator; @id keeps the entity linked to home) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://artificialturfwindsor.ca#organization",
-  "name": "Windsor Turf Pros",
-  "image": "https://artificialturfwindsor.ca/favicon.svg",
-  "url": "https://artificialturfwindsor.ca",
-  "telephone": "+1 (226) 212-0631",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Windsor",
-    "addressRegion": "ON",
-    "postalCode": "N9A 4J8",
-    "addressCountry": "CA"
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "LaSalle",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "LaSalle",
-      "addressRegion": "ON",
-      "postalCode": "N9J",
-      "addressCountry": "CA"
-    }
-  }
-}
-</script>
 
 <footer id="site-footer" role="contentinfo">
   <div class="footer-top"><div class="container"><div class="footer-grid">
@@ -2002,10 +2069,10 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
 <a id="mobile-cta" href="tel:+12262120631" aria-label="Call us now"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Call Now — +1 (226) 212-0631</a>
 
 <script>
-  function toggleFaq(btn){var item=btn.closest('.faq-item');var isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');el.querySelector('.faq-question').setAttribute('aria-expanded','false');});if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');}}
   function toggleMenu(btn){var m=document.getElementById('mobile-nav');m.classList.toggle('open');btn.setAttribute('aria-expanded',String(!m.classList.contains('open')));}
   function closeMenu(){var m=document.getElementById('mobile-nav');m.classList.remove('open');var b=document.querySelector('.nav-hamburger');if(b)b.setAttribute('aria-expanded','false');}
   window.addEventListener('scroll',function(){var n=document.getElementById('site-nav');n.style.boxShadow=window.scrollY>10?'0 2px 16px rgba(0,0,0,0.25)':'0 2px 12px rgba(0,0,0,0.2)';},{passive:true});
+
   /* ── SERVICES DROPDOWN ── */
   function toggleServicesMenu(e) {
     e.stopPropagation();

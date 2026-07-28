@@ -14,6 +14,9 @@
     "services/swimming-pool-turf/index.html",
     "services/pet-friendly-turf/index.html",
     "services/rooftop-deck-turf/index.html",
+    "services/balcony-turf/index.html",
+    "services/patio-turf/index.html",
+    "services/home-gym-turf/index.html",
     "areas/lasalle/index.html",
     "areas/tecumseh/index.html",
     "areas/amherstburg/index.html",
@@ -24,8 +27,8 @@
     "areas/harrow/index.html",
     "cost-guides/artificial-turf-cost-windsor/index.html"
   ],
-  "total_pages": 22,
-  "image_count": 40,
+  "total_pages": 25,
+  "image_count": 55,
   "all_urls": [
     "/",
     "/about/",
@@ -40,6 +43,9 @@
     "/services/swimming-pool-turf/",
     "/services/pet-friendly-turf/",
     "/services/rooftop-deck-turf/",
+    "/services/balcony-turf/",
+    "/services/patio-turf/",
+    "/services/home-gym-turf/",
     "/areas/lasalle/",
     "/areas/tecumseh/",
     "/areas/amherstburg/",
@@ -59,5 +65,5 @@
     "/blog/why-artificial-turf-looks-fake-and-how-to-avoid-it/",
     "/blog/artificial-turf-windsor-winters-what-you-need-to-know/"
   ],
-  "assembled_at": "2026-07-03T01:32:05.997146+00:00"
+  "assembled_at": "2026-07-28T16:11:24.796367+00:00"
 }

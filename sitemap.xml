@@ -66,6 +66,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://artificialturfwindsor.ca/services/balcony-turf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://artificialturfwindsor.ca/services/patio-turf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://artificialturfwindsor.ca/services/home-gym-turf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://artificialturfwindsor.ca/areas/lasalle/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
