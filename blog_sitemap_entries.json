@@ -1,6 +1,8 @@
 {
   "blog_urls": [
     "/blog/",
+    "/blog/sod-vs-artificial-grass-essex-county/",
+    "/blog/rooftop-balcony-turf-windsor/",
     "/blog/can-weeds-grow-through-artificial-grass-windsor/",
     "/blog/artificial-turf-windsor-summers-what-you-need-to-know/",
     "/blog/artificial-turf-windsor-spring-prep-guide/",
@@ -11,6 +13,8 @@
     "/blog/artificial-turf-windsor-winters-what-you-need-to-know/"
   ],
   "blog_lastmods": {
+    "/blog/sod-vs-artificial-grass-essex-county/": "2026-09-03",
+    "/blog/rooftop-balcony-turf-windsor/": "2026-09-03",
     "/blog/can-weeds-grow-through-artificial-grass-windsor/": "2026-05-26",
     "/blog/artificial-turf-windsor-summers-what-you-need-to-know/": "2026-04-28",
     "/blog/artificial-turf-windsor-spring-prep-guide/": "2026-04-27",
@@ -19,6 +23,6 @@
     "/blog/artificial-turf-vs-natural-grass-windsor/": "2026-04-02",
     "/blog/why-artificial-turf-looks-fake-and-how-to-avoid-it/": "2026-04-02",
     "/blog/artificial-turf-windsor-winters-what-you-need-to-know/": "2026-04-02",
-    "/blog/": "2026-05-26"
+    "/blog/": "2026-09-03"
   }
 }
