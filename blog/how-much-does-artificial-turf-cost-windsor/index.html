@@ -27,7 +27,7 @@
       "name": "How much does artificial turf cost per square foot in Windsor, Ontario?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most residential turf projects in Windsor range from $8 to $18 per square foot installed, depending on turf grade, sub-base requirements, and site complexity. Request a free on-site estimate for accurate pricing on your specific yard."
+        "text": "Most residential turf projects in Windsor range from $8 to $18 per square foot installed, depending on turf grade, sub-base requirements, and site complexity. Request an on-site estimate for accurate pricing on your specific yard."
       }
     },
     {
@@ -52,14 +52,6 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "For most Windsor homeowners, yes. The upfront cost is offset by eliminating annual lawn care expenses and watering costs. Quality turf lasts 15–20 years, making it a long-term investment rather than a recurring expense."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do Windsor turf installers offer financing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some do. Ask about financing options when you request your estimate — spreading the cost over 12–24 months can make a backyard turf project much more accessible without changing the total value you receive."
       }
     }
   ]
@@ -1015,6 +1007,16 @@ ul { list-style: none; }
   color: var(--white);
 }
 
+/* Footer disclaimer: lead-referral posture, sits above the copyright strip on every page. */
+.footer-disclaimer {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.6);
+  margin: 0 0 20px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding: 20px 0;
@@ -1545,6 +1547,9 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
 }
 
 /* ── Lead form spam protection ─────────────────────────────────────────── */
+/* Turnstile (managed mode): renders a compact verification strip above the submit button. */
+.cf-turnstile { margin: 0 0 14px; min-height: 65px; }
+
 /* Honeypot: visually removed but present in the DOM for bots to fill. */
 .hp-field {
   position: absolute !important;
@@ -1715,7 +1720,6 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
           </ul>
         </li>
         <li><a href="/about/">About</a></li>
-        <li><a href="/reviews/">Reviews</a></li>
         <li><a href="/faq/">FAQ</a></li>
         <li><a href="/blog/">Blog</a></li><li><a href="/cost-guides/artificial-turf-cost-windsor/">Price Guide</a></li>
         <li><a href="/contact/">Contact</a></li>
@@ -1725,7 +1729,7 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           +1 (226) 212-0631
         </a>
-        <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
+        <a href="/contact/" class="btn btn-primary">Get a Quote</a>
       </div>
       <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">
         <span></span><span></span><span></span>
@@ -1743,7 +1747,6 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
     <a href="/services/patio-turf/" onclick="closeMenu()">Patio Turf</a>
     <a href="/services/home-gym-turf/" onclick="closeMenu()">Home Gym Turf</a>
     <a href="/about/" onclick="closeMenu()">About</a>
-    <a href="/reviews/" onclick="closeMenu()">Reviews</a>
     <a href="/faq/" onclick="closeMenu()">FAQ</a>
     <a href="/blog/" onclick="closeMenu()">Blog</a>
     <a href="/contact/" onclick="closeMenu()">Contact</a>
@@ -1751,7 +1754,7 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
       +1 (226) 212-0631
     </a>
-    <a href="/contact/" class="btn btn-primary mobile-cta" onclick="closeMenu()">Get a Free Estimate</a>
+    <a href="/contact/" class="btn btn-primary mobile-cta" onclick="closeMenu()">Get a Quote</a>
   </nav>
 </header>
 
@@ -1791,7 +1794,7 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
           <!-- Inline CTA (injected for cost/comparison posts only) -->
           <div class="post-cta-inline">
   <p>Ready to get a quote in Windsor? We respond within one business day.</p>
-  <a href="/contact/" class="btn btn-primary" style="background:var(--color-accent);border-color:var(--color-accent);">Get a Free Quote</a>
+  <a href="/contact/" class="btn btn-primary" style="background:var(--color-accent);border-color:var(--color-accent);">Get a Quote</a>
 </div>
 
           <!-- Body sections -->
@@ -1817,12 +1820,12 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
 
 <div class="post-section">
   <h2>How to Get an Accurate Quote in Windsor</h2>
-  <p>The most reliable way to get a fair price is a free on-site estimate — not a square-footage calculation over the phone. Windsor Turf Pros provides free written estimates with no obligation, typically within the same week. An estimator visits your yard, assesses the drainage, measures accurately, and recommends the right turf product for your use case. That's how you avoid the surprises that show up on installation day.</p>
+  <p>The most reliable way to get a fair price is an on-site estimate — not a square-footage calculation over the phone. Windsor Turf Pros provides written estimates with no obligation, typically within the same week. An estimator visits your yard, assesses the drainage, measures accurately, and recommends the right turf product for your use case. That's how you avoid the surprises that show up on installation day.</p>
 </div>
 
 <div class="post-section">
   <h2>Don't Forget Disposal</h2>
-  <p>One more line item people forget to compare: disposal. Tearing out an old lawn produces a surprising volume of sod and soil, and hauling it away is part of a proper quote. If a low bid doesn't mention disposal, ask where that cost went before you sign anything.</p>
+  <p>One more line item people forget to compare: disposal. Tearing out an old lawn produces a surprising volume of sod and soil, and hauling it away is part of a proper quote. If a low bid doesn't mention disposal, ask where that cost went before you sign anything. Ask whether the quote covers hauling and dump fees, and whether the crew removes the old sod the same day or leaves it stacked for a separate pickup. A quote that spells this out is far easier to compare against the next one.</p>
 </div>
 
           <!-- FAQ accordion -->
@@ -1831,7 +1834,7 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
   <div class="faq-accordion">
 <details class="faq-item">
   <summary class="faq-question">How much does artificial turf cost per square foot in Windsor, Ontario? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
-  <div class="faq-answer"><p>Most residential turf projects in Windsor range from $8 to $18 per square foot installed, depending on turf grade, sub-base requirements, and site complexity. Request a free on-site estimate for accurate pricing on your specific yard.</p></div>
+  <div class="faq-answer"><p>Most residential turf projects in Windsor range from $8 to $18 per square foot installed, depending on turf grade, sub-base requirements, and site complexity. Request an on-site estimate for accurate pricing on your specific yard.</p></div>
 </details>
 <details class="faq-item">
   <summary class="faq-question">Does the price include removal of my existing lawn? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
@@ -1845,10 +1848,6 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
   <summary class="faq-question">Is artificial turf worth the cost for Windsor homeowners? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
   <div class="faq-answer"><p>For most Windsor homeowners, yes. The upfront cost is offset by eliminating annual lawn care expenses and watering costs. Quality turf lasts 15–20 years, making it a long-term investment rather than a recurring expense.</p></div>
 </details>
-<details class="faq-item">
-  <summary class="faq-question">Do Windsor turf installers offer financing? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
-  <div class="faq-answer"><p>Some do. Ask about financing options when you request your estimate — spreading the cost over 12–24 months can make a backyard turf project much more accessible without changing the total value you receive.</p></div>
-</details>
   </div>
 </div>
 
@@ -1861,7 +1860,7 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.15 12 19.79 19.79 0 011.1 3.18 2 2 0 013.1 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                 Call +1 (226) 212-0631
               </a>
-              <a href="/contact/" class="btn btn-primary" style="background:var(--white);color:var(--color-accent);">Get a Free Quote</a>
+              <a href="/contact/" class="btn btn-primary" style="background:var(--white);color:var(--color-accent);">Get a Quote</a>
             </div>
           </div>
 
@@ -1872,7 +1871,7 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
 
           <!-- Quote CTA card -->
           <div class="sidebar-card" style="background:var(--color-primary);border-color:var(--color-primary);">
-            <h3 style="color:var(--white);">Get a Free Quote</h3>
+            <h3 style="color:var(--white);">Get a Quote</h3>
             <p style="color:rgba(255,255,255,0.85);">Serving Windsor and surrounding areas. No obligation.</p>
             <a href="/contact/" class="btn btn-primary" style="display:flex;width:100%;box-sizing:border-box;justify-content:center;background:var(--color-accent);">Request Quote</a>
             <a href="tel:+12262120631" style="display:block;text-align:center;margin-top:10px;font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);">Or call +1 (226) 212-0631</a>
@@ -1909,7 +1908,7 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
       <div class="footer-grid">
         <div class="footer-col">
           <h4><a href="/" class="footer-brand-link">Windsor Turf Pros</a></h4>
-          <p>Windsor's trusted artificial turf specialists. Fully licensed and insured, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p>
+          <p>Windsor's trusted artificial turf specialists, serving Windsor, LaSalle, Tecumseh, Amherstburg, and surrounding Essex County communities.</p>
           <address class="footer-nap" style="font-style:normal;">
             <span>Windsor, Ontario</span><br>
             <a href="tel:+12262120631" style="color: rgba(255,255,255,0.65);">+1 (226) 212-0631</a><br>
@@ -1929,7 +1928,6 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
           <ul>
             <li><a href="/contact/">Request Quote</a></li>
             <li><a href="/about/">About Us</a></li>
-            <li><a href="/reviews/">Reviews</a></li>
             <li><a href="/faq/">FAQ</a></li>
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/privacy/">Privacy Policy</a></li>
@@ -1951,8 +1949,9 @@ body.feel-editorial-industrial { background: var(--color-bg); --hairline: #c8c7b
     </div>
   </div>
   <div class="container">
+    <p class="footer-disclaimer">This site is a free service to assist homeowners in connecting with local service contractors. All contractors are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.</p>
     <div class="footer-bottom">
-      <span>© 2026 Windsor Turf Pros. Licensed &amp; Insured.</span>
+      <span>© 2026 Windsor Turf Pros. All rights reserved.</span>
       <span>Windsor, Ontario, Canada</span>
     </div>
   </div>

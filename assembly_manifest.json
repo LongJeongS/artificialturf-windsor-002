@@ -4,7 +4,6 @@
     "index.html",
     "about/index.html",
     "contact/index.html",
-    "reviews/index.html",
     "faq/index.html",
     "terms/index.html",
     "privacy/index.html",
@@ -27,13 +26,12 @@
     "areas/harrow/index.html",
     "cost-guides/artificial-turf-cost-windsor/index.html"
   ],
-  "total_pages": 25,
+  "total_pages": 24,
   "image_count": 23,
   "all_urls": [
     "/",
     "/about/",
     "/contact/",
-    "/reviews/",
     "/faq/",
     "/terms/",
     "/privacy/",
@@ -67,5 +65,5 @@
     "/blog/why-artificial-turf-looks-fake-and-how-to-avoid-it/",
     "/blog/artificial-turf-windsor-winters-what-you-need-to-know/"
   ],
-  "assembled_at": "2026-09-10T01:36:03.612050+00:00"
+  "assembled_at": "2026-09-10T16:24:33.975141+00:00"
 }
